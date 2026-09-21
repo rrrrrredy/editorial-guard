@@ -1,0 +1,338 @@
+[
+  {
+    "source_group_id": "main-0425",
+    "parent_id": "main-0425-natural",
+    "suite": "DeliveryBench-ZH",
+    "track": "rewrite",
+    "split": "locked_test",
+    "language": "zh",
+    "locale": "zh-Hans",
+    "source_language": "zh",
+    "is_translation": false,
+    "language_scope_status": "supported",
+    "genre": "项目文档",
+    "audience": "项目参与者",
+    "stage": "final",
+    "delivery_channel": "document",
+    "instruction": "根据给定资料写给项目参与者的正式说明正文，完整保留事实及其条件、范围、来源和未知事项；保留指定引文。没有最低字数要求。",
+    "style_profile": "editorial-zh",
+    "source_bundle": {
+      "fictional": true,
+      "source_language": "zh",
+      "facts": [
+        "虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。",
+        "只有到货核验通过后才登记为交付，发运不等于签收。",
+        "运输记录覆盖11天，不能推算全年损耗。",
+        "本期记录分4批录入，批次顺序不表示效果优劣。",
+        "本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。",
+        "下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。",
+        "对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。",
+        "虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。",
+        "不同观察条件的记录分别存放，不直接合并为总体效果。",
+        "项目只在每周一更新一次记录，未更新不等于相关工作没有发生。"
+      ],
+      "unknowns": [
+        "没有提供因果验证或外部普遍性证据"
+      ]
+    },
+    "protected_spans": [],
+    "required_claims": [
+      "虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。",
+      "只有到货核验通过后才登记为交付，发运不等于签收。",
+      "运输记录覆盖11天，不能推算全年损耗。",
+      "本期记录分4批录入，批次顺序不表示效果优劣。",
+      "本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。",
+      "下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。",
+      "对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。",
+      "虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。",
+      "不同观察条件的记录分别存放，不直接合并为总体效果。",
+      "项目只在每周一更新一次记录，未更新不等于相关工作没有发生。"
+    ],
+    "constraints": {
+      "literal_required": [
+        "“只有到货核验通过后才登记为交付，发运不等于签收。”"
+      ],
+      "boundary_kind": "source_quote"
+    },
+    "issues": [],
+    "acceptable_references": [],
+    "provenance": {
+      "origin": "synthetic",
+      "generator": "programmatic",
+      "request_id": "evidence-d4dcf2b6fcdde543df581e3c",
+      "topic": "家具维修",
+      "length_band": "long",
+      "designed_boundary": true,
+      "route": "controlled",
+      "parent_generator": "deepseek",
+      "H2_intended_state": 0,
+      "transform": "programmatic; intended state is not a subjective gold label"
+    },
+    "generation_config": {
+      "requested_model": "deepseek-flash",
+      "reported_model": "deepseek-flash",
+      "weight_version_locked": false
+    },
+    "annotation_records": [],
+    "disagreement_status": "unannotated",
+    "oracle_type": "mixed",
+    "schema_version": "0.1.0",
+    "rubric_version": "0.1.0",
+    "id": "main-0425-H2-0",
+    "variant_id": "controlled",
+    "input_text": "虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。\n\n“只有到货核验通过后才登记为交付，发运不等于签收。”\n\n运输记录覆盖11天，不能推算全年损耗。\n\n本期记录分4批录入，批次顺序不表示效果优劣。\n\n本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。\n\n下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。\n\n对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。\n\n虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。\n\n不同观察条件的记录分别存放，不直接合并为总体效果。\n\n项目只在每周一更新一次记录，未更新不等于相关工作没有发生。",
+    "content_hash": "d5fc997d2e724a1bd9fd3c4b78beeb1550d63b97462bd524628b505261645bb4"
+  },
+  {
+    "source_group_id": "main-0425",
+    "parent_id": "main-0425-natural",
+    "suite": "DeliveryBench-ZH",
+    "track": "rewrite",
+    "split": "locked_test",
+    "language": "zh",
+    "locale": "zh-Hans",
+    "source_language": "zh",
+    "is_translation": false,
+    "language_scope_status": "supported",
+    "genre": "项目文档",
+    "audience": "项目参与者",
+    "stage": "final",
+    "delivery_channel": "document",
+    "instruction": "根据给定资料写给项目参与者的正式说明正文，完整保留事实及其条件、范围、来源和未知事项；保留指定引文。没有最低字数要求。",
+    "style_profile": "editorial-zh",
+    "source_bundle": {
+      "fictional": true,
+      "source_language": "zh",
+      "facts": [
+        "虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。",
+        "只有到货核验通过后才登记为交付，发运不等于签收。",
+        "运输记录覆盖11天，不能推算全年损耗。",
+        "本期记录分4批录入，批次顺序不表示效果优劣。",
+        "本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。",
+        "下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。",
+        "对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。",
+        "虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。",
+        "不同观察条件的记录分别存放，不直接合并为总体效果。",
+        "项目只在每周一更新一次记录，未更新不等于相关工作没有发生。"
+      ],
+      "unknowns": [
+        "没有提供因果验证或外部普遍性证据"
+      ]
+    },
+    "protected_spans": [],
+    "required_claims": [
+      "虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。",
+      "只有到货核验通过后才登记为交付，发运不等于签收。",
+      "运输记录覆盖11天，不能推算全年损耗。",
+      "本期记录分4批录入，批次顺序不表示效果优劣。",
+      "本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。",
+      "下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。",
+      "对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。",
+      "虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。",
+      "不同观察条件的记录分别存放，不直接合并为总体效果。",
+      "项目只在每周一更新一次记录，未更新不等于相关工作没有发生。"
+    ],
+    "constraints": {
+      "literal_required": [
+        "“只有到货核验通过后才登记为交付，发运不等于签收。”"
+      ],
+      "boundary_kind": "source_quote"
+    },
+    "issues": [],
+    "acceptable_references": [],
+    "provenance": {
+      "origin": "synthetic",
+      "generator": "programmatic",
+      "request_id": "evidence-d4dcf2b6fcdde543df581e3c",
+      "topic": "家具维修",
+      "length_band": "long",
+      "designed_boundary": true,
+      "route": "controlled",
+      "parent_generator": "deepseek",
+      "H2_intended_state": 1,
+      "transform": "programmatic; intended state is not a subjective gold label"
+    },
+    "generation_config": {
+      "requested_model": "deepseek-flash",
+      "reported_model": "deepseek-flash",
+      "weight_version_locked": false
+    },
+    "annotation_records": [],
+    "disagreement_status": "unannotated",
+    "oracle_type": "mixed",
+    "schema_version": "0.1.0",
+    "rubric_version": "0.1.0",
+    "id": "main-0425-H2-1",
+    "variant_id": "controlled",
+    "input_text": "综上所述，虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。由此可见，这一点具有重要意义。\n\n综上所述，“只有到货核验通过后才登记为交付，发运不等于签收。”由此可见，这一点具有重要意义。\n\n综上所述，运输记录覆盖11天，不能推算全年损耗。由此可见，这一点具有重要意义。\n\n综上所述，本期记录分4批录入，批次顺序不表示效果优劣。由此可见，这一点具有重要意义。\n\n综上所述，本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。由此可见，这一点具有重要意义。\n\n综上所述，下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。由此可见，这一点具有重要意义。\n\n综上所述，对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。由此可见，这一点具有重要意义。\n\n综上所述，虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。由此可见，这一点具有重要意义。\n\n综上所述，不同观察条件的记录分别存放，不直接合并为总体效果。由此可见，这一点具有重要意义。\n\n综上所述，项目只在每周一更新一次记录，未更新不等于相关工作没有发生。由此可见，这一点具有重要意义。",
+    "content_hash": "0b01f19dcd0e3da7c4a2ee7c72b0353a659c3605dbc5257d470f60d5025b3ab8"
+  },
+  {
+    "source_group_id": "main-0425",
+    "parent_id": "main-0425-natural",
+    "suite": "DeliveryBench-ZH",
+    "track": "rewrite",
+    "split": "locked_test",
+    "language": "zh",
+    "locale": "zh-Hans",
+    "source_language": "zh",
+    "is_translation": false,
+    "language_scope_status": "supported",
+    "genre": "项目文档",
+    "audience": "项目参与者",
+    "stage": "final",
+    "delivery_channel": "document",
+    "instruction": "根据给定资料写给项目参与者的正式说明正文，完整保留事实及其条件、范围、来源和未知事项；保留指定引文。没有最低字数要求。",
+    "style_profile": "editorial-zh",
+    "source_bundle": {
+      "fictional": true,
+      "source_language": "zh",
+      "facts": [
+        "虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。",
+        "只有到货核验通过后才登记为交付，发运不等于签收。",
+        "运输记录覆盖11天，不能推算全年损耗。",
+        "本期记录分4批录入，批次顺序不表示效果优劣。",
+        "本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。",
+        "下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。",
+        "对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。",
+        "虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。",
+        "不同观察条件的记录分别存放，不直接合并为总体效果。",
+        "项目只在每周一更新一次记录，未更新不等于相关工作没有发生。"
+      ],
+      "unknowns": [
+        "没有提供因果验证或外部普遍性证据"
+      ]
+    },
+    "protected_spans": [],
+    "required_claims": [
+      "虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。",
+      "只有到货核验通过后才登记为交付，发运不等于签收。",
+      "运输记录覆盖11天，不能推算全年损耗。",
+      "本期记录分4批录入，批次顺序不表示效果优劣。",
+      "本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。",
+      "下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。",
+      "对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。",
+      "虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。",
+      "不同观察条件的记录分别存放，不直接合并为总体效果。",
+      "项目只在每周一更新一次记录，未更新不等于相关工作没有发生。"
+    ],
+    "constraints": {
+      "literal_required": [
+        "“只有到货核验通过后才登记为交付，发运不等于签收。”"
+      ],
+      "boundary_kind": "source_quote"
+    },
+    "issues": [],
+    "acceptable_references": [],
+    "provenance": {
+      "origin": "synthetic",
+      "generator": "programmatic",
+      "request_id": "evidence-d4dcf2b6fcdde543df581e3c",
+      "topic": "家具维修",
+      "length_band": "long",
+      "designed_boundary": true,
+      "route": "controlled",
+      "parent_generator": "deepseek",
+      "H2_intended_state": 2,
+      "transform": "programmatic; intended state is not a subjective gold label"
+    },
+    "generation_config": {
+      "requested_model": "deepseek-flash",
+      "reported_model": "deepseek-flash",
+      "weight_version_locked": false
+    },
+    "annotation_records": [],
+    "disagreement_status": "unannotated",
+    "oracle_type": "mixed",
+    "schema_version": "0.1.0",
+    "rubric_version": "0.1.0",
+    "id": "main-0425-H2-2",
+    "variant_id": "controlled",
+    "input_text": "下面我先分析，再给出一个深入且可落地的版本。\n\n虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。\n\n“只有到货核验通过后才登记为交付，发运不等于签收。”\n\n运输记录覆盖11天，不能推算全年损耗。\n\n本期记录分4批录入，批次顺序不表示效果优劣。\n\n本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。\n\n下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。\n\n对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。\n\n虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。\n\n不同观察条件的记录分别存放，不直接合并为总体效果。\n\n项目只在每周一更新一次记录，未更新不等于相关工作没有发生。\n\n我已为你去除AI味。",
+    "content_hash": "57d6b55f4e871406d3b7d39944c1a583d72663c2134479f792dac21283e5e79e"
+  },
+  {
+    "source_group_id": "main-0425",
+    "parent_id": "main-0425-natural",
+    "suite": "DeliveryBench-ZH",
+    "track": "rewrite",
+    "split": "locked_test",
+    "language": "zh",
+    "locale": "zh-Hans",
+    "source_language": "zh",
+    "is_translation": false,
+    "language_scope_status": "supported",
+    "genre": "项目文档",
+    "audience": "项目参与者",
+    "stage": "final",
+    "delivery_channel": "document",
+    "instruction": "根据给定资料写给项目参与者的正式说明正文，完整保留事实及其条件、范围、来源和未知事项；保留指定引文。没有最低字数要求。",
+    "style_profile": "editorial-zh",
+    "source_bundle": {
+      "fictional": true,
+      "source_language": "zh",
+      "facts": [
+        "虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。",
+        "只有到货核验通过后才登记为交付，发运不等于签收。",
+        "运输记录覆盖11天，不能推算全年损耗。",
+        "本期记录分4批录入，批次顺序不表示效果优劣。",
+        "本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。",
+        "下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。",
+        "对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。",
+        "虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。",
+        "不同观察条件的记录分别存放，不直接合并为总体效果。",
+        "项目只在每周一更新一次记录，未更新不等于相关工作没有发生。"
+      ],
+      "unknowns": [
+        "没有提供因果验证或外部普遍性证据"
+      ]
+    },
+    "protected_spans": [],
+    "required_claims": [
+      "虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。",
+      "只有到货核验通过后才登记为交付，发运不等于签收。",
+      "运输记录覆盖11天，不能推算全年损耗。",
+      "本期记录分4批录入，批次顺序不表示效果优劣。",
+      "本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。",
+      "下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。",
+      "对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。",
+      "虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。",
+      "不同观察条件的记录分别存放，不直接合并为总体效果。",
+      "项目只在每周一更新一次记录，未更新不等于相关工作没有发生。"
+    ],
+    "constraints": {
+      "literal_required": [
+        "“只有到货核验通过后才登记为交付，发运不等于签收。”"
+      ],
+      "boundary_kind": "source_quote"
+    },
+    "issues": [],
+    "acceptable_references": [],
+    "provenance": {
+      "origin": "synthetic",
+      "generator": "programmatic",
+      "request_id": "evidence-d4dcf2b6fcdde543df581e3c",
+      "topic": "家具维修",
+      "length_band": "long",
+      "designed_boundary": true,
+      "route": "controlled",
+      "parent_generator": "deepseek",
+      "H2_intended_state": 3,
+      "transform": "programmatic; intended state is not a subjective gold label"
+    },
+    "generation_config": {
+      "requested_model": "deepseek-flash",
+      "reported_model": "deepseek-flash",
+      "weight_version_locked": false
+    },
+    "annotation_records": [],
+    "disagreement_status": "unannotated",
+    "oracle_type": "mixed",
+    "schema_version": "0.1.0",
+    "rubric_version": "0.1.0",
+    "id": "main-0425-H2-3",
+    "variant_id": "controlled",
+    "input_text": "下面我先分析，再给出一个深入且可落地的版本。\n\n综上所述，虚构家具维修项目426号本期运输62箱物资，其中8箱需要温控。由此可见，这一点具有重要意义。\n\n综上所述，“只有到货核验通过后才登记为交付，发运不等于签收。”由此可见，这一点具有重要意义。\n\n综上所述，运输记录覆盖11天，不能推算全年损耗。由此可见，这一点具有重要意义。\n\n综上所述，本期记录分4批录入，批次顺序不表示效果优劣。由此可见，这一点具有重要意义。\n\n综上所述，本期有3份附件尚待核对，未核对的附件不得用于扩大现有结论。由此可见，这一点具有重要意义。\n\n综上所述，下一步安排是核对附件和记录范围，未提供确定的完成日期或收益承诺。由此可见，这一点具有重要意义。\n\n综上所述，对外使用资料前必须重新核对版本号，内部流转不等于已获准公开。由此可见，这一点具有重要意义。\n\n综上所述，虚构家具维修项目426号的资料由记录员甲整理、记录员乙复核，两人的分工不代表独立外部审计。由此可见，这一点具有重要意义。\n\n综上所述，不同观察条件的记录分别存放，不直接合并为总体效果。由此可见，这一点具有重要意义。\n\n综上所述，项目只在每周一更新一次记录，未更新不等于相关工作没有发生。由此可见，这一点具有重要意义。\n\n我已为你去除AI味。",
+    "content_hash": "f8daf7117da3551cf8305b044c629de143a1099690e345ff84265fdb904dcd63"
+  }
+]

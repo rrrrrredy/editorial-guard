@@ -1,0 +1,103 @@
+{
+  "requests": 4017,
+  "codex_requests": 958,
+  "remaining_total": 3983,
+  "remaining_codex": 42,
+  "groups": [
+    {
+      "provider": "codex",
+      "state": "failed",
+      "currency": null,
+      "requests": 4,
+      "estimated_cost": null,
+      "actual_cost": null,
+      "unknown_cost_requests": 4
+    },
+    {
+      "provider": "codex",
+      "state": "succeeded",
+      "currency": null,
+      "requests": 586,
+      "estimated_cost": null,
+      "actual_cost": null,
+      "unknown_cost_requests": 586
+    },
+    {
+      "provider": "deepseek",
+      "state": "failed",
+      "currency": null,
+      "requests": 2,
+      "estimated_cost": null,
+      "actual_cost": null,
+      "unknown_cost_requests": 2
+    },
+    {
+      "provider": "deepseek",
+      "state": "failed",
+      "currency": "USD",
+      "requests": 31,
+      "estimated_cost": 0.0576831,
+      "actual_cost": null,
+      "unknown_cost_requests": 0
+    },
+    {
+      "provider": "deepseek",
+      "state": "succeeded",
+      "currency": null,
+      "requests": 1,
+      "estimated_cost": null,
+      "actual_cost": null,
+      "unknown_cost_requests": 1
+    },
+    {
+      "provider": "deepseek",
+      "state": "succeeded",
+      "currency": "USD",
+      "requests": 654,
+      "estimated_cost": 1.1991140999999996,
+      "actual_cost": null,
+      "unknown_cost_requests": 0
+    },
+    {
+      "provider": "glm",
+      "state": "failed",
+      "currency": null,
+      "requests": 37,
+      "estimated_cost": null,
+      "actual_cost": null,
+      "unknown_cost_requests": 37
+    },
+    {
+      "provider": "glm",
+      "state": "failed",
+      "currency": "CNY",
+      "requests": 16,
+      "estimated_cost": 1.343992,
+      "actual_cost": null,
+      "unknown_cost_requests": 0
+    },
+    {
+      "provider": "glm",
+      "state": "succeeded",
+      "currency": null,
+      "requests": 71,
+      "estimated_cost": null,
+      "actual_cost": null,
+      "unknown_cost_requests": 71
+    },
+    {
+      "provider": "glm",
+      "state": "succeeded",
+      "currency": "CNY",
+      "requests": 743,
+      "estimated_cost": 32.13550799999997,
+      "actual_cost": null,
+      "unknown_cost_requests": 0
+    }
+  ],
+  "amount_limit": null,
+  "retained_requests": 2145,
+  "unattributed_historical_requests": 1872,
+  "unattributed_historical_client_requests": 294,
+  "cost_scope": "Costs are available for recorded three-provider requests; historical unattributed costs remain unknown. Aggregate counts include both scopes."
+}

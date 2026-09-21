@@ -1,0 +1,19 @@
+include LICENSE README.md LICENSING.md THIRD_PARTY_NOTICES.md
+include pyproject.toml
+include requirements-runtime.lock
+recursive-include src/editorial_guard *.py *.json
+exclude src/editorial_guard/calibration.py
+exclude src/editorial_guard/bias_checks.py
+exclude src/editorial_guard/claim_controls.py
+exclude src/editorial_guard/interventions.py
+exclude src/editorial_guard/supplemental.py
+prune datasets
+prune reports
+prune research
+prune tests
+prune site
+prune skills
+prune .eg
+global-exclude *.pyc
+
+prune evals

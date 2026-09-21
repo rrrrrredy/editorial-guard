@@ -1,0 +1,25 @@
+{
+  "StyleBench-ZH": {
+    "instances_with_two_annotations": 470,
+    "disagreement_counts_by_field": {
+      "style_problem": 170,
+      "process_problem": 145,
+      "source_fidelity": 203,
+      "task_satisfied": 259,
+      "no_edit_needed": 145
+    },
+    "scope": "Fields overlap; counts are not additive and do not measure human error rate"
+  },
+  "DeliveryBench-ZH": {
+    "instances_with_two_annotations": 474,
+    "disagreement_counts_by_field": {
+      "style_problem": 202,
+      "process_problem": 155,
+      "source_fidelity": 220,
+      "task_satisfied": 275,
+      "no_edit_needed": 160,
+      "valid_task": 1
+    },
+    "scope": "Fields overlap; counts are not additive and do not measure human error rate"
+  }
+}

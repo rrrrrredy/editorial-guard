@@ -1,0 +1,26 @@
+[
+  {
+    "method": "R-Humanizer",
+    "path": "evals/third_party/Humanizer",
+    "commit": "9862685f575c65a8247f90369951df1b3416e3d6",
+    "license": "MIT",
+    "modified": false,
+    "wrapper": "final candidate only in JSON; original internal rules unchanged; not a native client reproduction"
+  },
+  {
+    "method": "R-HumanizerZH",
+    "path": "evals/third_party/HumanizerZH",
+    "commit": "91f3d394db8419c20d67ebe22a96cf8fee0a404b",
+    "license": "MIT",
+    "modified": false,
+    "wrapper": "final candidate only in JSON; original internal rules unchanged; not a native client reproduction"
+  },
+  {
+    "method": "R-StopSlop",
+    "path": "evals/third_party/StopSlop",
+    "commit": "8da1f030185bdfe8471220585162991eaeb970e9",
+    "license": "MIT",
+    "modified": false,
+    "wrapper": "final candidate only in JSON; original internal rules unchanged; not a native client reproduction"
+  }
+]

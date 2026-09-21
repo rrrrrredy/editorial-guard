@@ -1,0 +1,8 @@
+{
+  "name": "general-zh",
+  "language": "zh",
+  "locale": "zh-Hans",
+  "preserve_author_voice": true,
+  "mandatory_fact_protection": true,
+  "global_character_limit": null
+}

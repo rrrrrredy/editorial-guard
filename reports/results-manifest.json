@@ -1,0 +1,26 @@
+{
+  "protocol_version": "0.2.0",
+  "software_version": "0.1.0",
+  "scope": "Source-verified results from retrospective and prospective cohorts",
+  "files": {
+    "annotation-disagreements.json": "13dd57df471460e1d4322d41d3dd93a969b63e847497312ac72b6b1c2aceee93",
+    "core-cells.jsonl": "c42dc9ef203d62ac8c465ab11826d55e4874e79dda34983fa277dc5ca066cd43",
+    "core-inputs.jsonl": "f840b2e3dc50c99d73947fd1d43a863fd35447dab62a37849d2a6be5119e3367",
+    "core-manifest.json": "7921ba8752d4032cc03f015ffd153339822b31854fd91d73c57062e40d6a58fb",
+    "core-operations.json": "b24c92d614e373b67e14814eef820228d5ef9c2eae51365322846a2b455d0e95",
+    "core-results.json": "ef0656cecc799ba02999b43656f9b0019af914db233367e3bff9d3d51e37e3f2",
+    "H2-cells.jsonl": "a23654be3fb7a6d35cd85248ba9976d422044997b79a6a59d93068616b647bf7",
+    "H2-inputs.jsonl": "b1533f481a6df5387f27b74f2f83070516a17e8520eaf5edd1ab7aa1cef31936",
+    "H2-manifest.json": "89f34a47739615b0209a46bef4afc3e0c9770f207e29a15f4d373d403d51bf83",
+    "H2-operations.json": "90dbfd8363d415aa679e7f31151879e47111d9bc5330e45f43f27bffa0ec1042",
+    "H2-results.json": "7c029840c92ddfa05c9debbdf3acaa32c112a647e32b31624e7a44e71539da8d",
+    "request-cost-summary.json": "d4be3fb38613ee5327eb21659a56bc551aaa393d4e5267becb429ce585f2c0d1",
+    "results.md": "42e7ef6c101a002ad3a5cfdce167d60656ecb96a72c7dcb009f5eab33c48ee13",
+    "retained-additional-records.json": "91ac84a60234c24a900baa7f3c884368c38221464048b836c11577404a34acb0",
+    "retained-additional-results.md": "96ae6f76d01f5569f5e962a16f8ff64e8c11f53ceaf6e46bd129c908a8f7d23a",
+    "retained-core-evidence.json": "5a9bb40f59eeb21593193071c59ee7ce719d4d5445ec149abebe068e660599cc",
+    "retained-core-evidence.md": "aba881439a1375609566749535cb06eb74eca0db259881888495274972684be8",
+    "secondary-inputs.json": "166cb18be586601091ef3849a9459c528fcd8cc21cc577ef2e826a210f178227",
+    "secondary-records.json": "94c34d5d71f56da7ed9b609a50de14548bc5fc656d5aa910c6dd859d5c075238"
+  }
+}

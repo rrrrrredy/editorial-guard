@@ -1,0 +1,68 @@
+{
+  "families": 241,
+  "instances": 482,
+  "splits": {
+    "calibration": 80,
+    "development": 300,
+    "validation": 100,
+    "locked_test": 2
+  },
+  "suites": {
+    "DeliveryBench-ZH": 482
+  },
+  "disagreements": {
+    "disputed": 341,
+    "agreement": 133,
+    "insufficient_evidence": 8
+  },
+  "languages": {
+    "zh-Hans": 482
+  },
+  "annotation_sources": {
+    "model_inferred": 241,
+    "mixed": 241
+  },
+  "independent_judgments": 956,
+  "confirmed_no_edit": 98,
+  "quality": {
+    "task_validity": {
+      "model_agreement_valid": 473,
+      "insufficient_evidence": 8,
+      "disputed": 1
+    },
+    "review_flags": {
+      "original_source_fidelity_contested": 247,
+      "semantic_uncertainty": 32,
+      "insufficient_independent_annotations": 8,
+      "required_literal_missing": 6,
+      "task_validity_disputed": 1
+    },
+    "confirmed_no_edit_instances": 98,
+    "agreed_four_states": {
+      "None": 277,
+      "[False, False]": 104,
+      "[True, True]": 55,
+      "[False, True]": 27,
+      "[True, False]": 19
+    },
+    "required_literal_missing_instances": 6,
+    "scope": "automated judgments; flags remain visible, no human validation or forced consensus"
+  },
+  "planned_main_families": 250,
+  "main_families": 250,
+  "held_back_instances": 98,
+  "generation_cohorts": {
+    "deepseek|unknown|unknown": 18,
+    "glm|codex|unknown": 20,
+    "codex|unknown|unknown": 20,
+    "deepseek|chat_completions|c7fc5ae8d084ed53e772235451d7b8c93a9715d87b81042ec2d5252db21c4b22": 144,
+    "codex|codex|7437d320a6ec7516da22623e9309d64dac4fddd825c3546669b59481f5371ef9": 140,
+    "glm|chat_completions|3bad715805d1092d10de81584139e7a1b9a956435e8f7ea5510ad2ee8cc11fc8": 136,
+    "deepseek|chat_completions|unknown": 2,
+    "glm|codex|fdeeba3fe710e2e1c0dcb4f59d3b3d91dee4c44d8479cb6b2bfa6eb5103ba9d5": 2
+  },
+  "designed_boundary_instances": 302,
+  "all_labels_automated": true,
+  "human_validation": false,
+  "independent_family_caveat": "distinct fictional task worlds drawn from seven base templates; lexical deduplication does not prove semantic independence"
+}

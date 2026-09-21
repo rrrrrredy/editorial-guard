@@ -1,0 +1,58 @@
+{
+  "platform": "Windows",
+  "client_version": "0.155.0-alpha.9.2",
+  "software_version": "0.1.0",
+  "rule_version": "0.1.2",
+  "skills": [
+    {
+      "mode": "explicit",
+      "native_load_observed": true,
+      "request_reference": "evidence-c371a8e0f271ede2a7770c70",
+      "scope": "Observed loading in one saved session; does not establish activation reliability across tasks"
+    },
+    {
+      "mode": "automatic",
+      "native_load_observed": true,
+      "request_reference": "evidence-f755ff6220e3c47c259258cb",
+      "scope": "Observed loading in one saved session; does not establish activation reliability across tasks"
+    }
+  ],
+  "controlled_finalize": {
+    "status": "published",
+    "accepted_response_matches_published_bytes": true,
+    "published_sha256": "0568c9cd7f60bdec723e21a6c991575f46512031f50852cc09bd8a20db1385f4",
+    "bytes": 198,
+    "changed_candidate_blocked": true,
+    "judge_provider": "glm",
+    "judge_request_reference": "evidence-7ad5c107dcbba74d7d6853d3",
+    "scope": "Controlled local path only; saved real model responses reused; candidate fixture remains changed after tamper case"
+  },
+  "command_hook": {
+    "scope": "installed command, synthetic events; not a native host event",
+    "rule_version": "0.1.2",
+    "valid": {
+      "returncode": 0,
+      "response": {}
+    },
+    "changed": {
+      "returncode": 0,
+      "response": {
+        "decision": "block",
+        "reason": "Registered deliverables changed or lack valid acceptance. Run the controlled verification/finalize workflow. Do not publish unchecked candidates."
+      }
+    },
+    "restored": {
+      "returncode": 0,
+      "response": {}
+    },
+    "restored_bytes": true,
+    "status": "pass"
+  },
+  "native_stop": {
+    "status": "not_observed",
+    "invocation": "official noninteractive exec",
+    "matching_host_records": 0,
+    "scope": "Command harness success is not native-event success; no global publication interception claim"
+  },
+  "source_evidence": "Existing individual model and local integration records; no additional model calls for this report"
+}

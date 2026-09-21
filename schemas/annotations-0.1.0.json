@@ -1,0 +1,159 @@
+{
+  "type": "object",
+  "properties": {
+    "records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "valid_task": {
+            "type": "boolean"
+          },
+          "language_scope_status": {
+            "enum": [
+              "supported",
+              "unsupported",
+              "unvalidated"
+            ]
+          },
+          "issues": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "text": {
+                  "type": "string"
+                },
+                "occurrence": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "suite": {
+                  "enum": [
+                    "style",
+                    "process"
+                  ]
+                },
+                "category": {
+                  "type": "string"
+                },
+                "severity": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 4
+                },
+                "reason": {
+                  "type": "string"
+                },
+                "action": {
+                  "enum": [
+                    "rewrite",
+                    "remove",
+                    "preserve",
+                    "review"
+                  ]
+                }
+              },
+              "required": [
+                "text",
+                "occurrence",
+                "suite",
+                "category",
+                "severity",
+                "reason",
+                "action"
+              ],
+              "additionalProperties": false
+            }
+          },
+          "style_scores": {
+            "type": "object",
+            "properties": {
+              "template_dependence": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              },
+              "expression_efficiency": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              },
+              "coherence": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              },
+              "scene_fit": {
+                "type": "integer",
+                "minimum": 0,
+                "maximum": 4
+              }
+            },
+            "required": [
+              "template_dependence",
+              "expression_efficiency",
+              "coherence",
+              "scene_fit"
+            ],
+            "additionalProperties": false
+          },
+          "process_problem": {
+            "type": "boolean"
+          },
+          "style_problem": {
+            "type": "boolean"
+          },
+          "source_fidelity": {
+            "enum": [
+              "pass",
+              "fail",
+              "uncertain"
+            ]
+          },
+          "task_satisfied": {
+            "enum": [
+              "pass",
+              "fail",
+              "uncertain"
+            ]
+          },
+          "no_edit_needed": {
+            "type": "boolean"
+          },
+          "protected_reasons": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "id",
+          "valid_task",
+          "language_scope_status",
+          "issues",
+          "style_scores",
+          "process_problem",
+          "style_problem",
+          "source_fidelity",
+          "task_satisfied",
+          "no_edit_needed",
+          "protected_reasons",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "records"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,5 @@
+<div class="eyebrow">安装与复现</div><h1>在本地运行，<br>由你控制交付。</h1><p>需要 Python 3.11 或更新版本。在源码目录安装：</p><pre>python -m pip install .
+editorial-guard doctor
+editorial-guard lint input.md --mode both --context context.example.json</pre><p>规则检查只提供线索，退出码 2 表示还需要语义验收。配置环境变量中的供应商密钥后，可运行独立编辑与裁判：</p><pre>editorial-guard rewrite input.md --mode both --config config.example.json --context context.example.json --sidecar review.json
+editorial-guard resume --work-dir .eg</pre><h2 class="section">项目级集成</h2><pre>editorial-guard hook install --root .
+editorial-guard hook disable --root .</pre><p>宿主原生 hook 需要审阅与信任；当前Windows宿主实测未观察到Stop触发，不宣称该原生路径已可用。只有受控 finalize 路径能提供发布前版本检查；已显示聊天文本和绕过 wrapper 的工具不在控制范围。</p><div id="downloads" class="notice">{{DOWNLOADS}}</div>

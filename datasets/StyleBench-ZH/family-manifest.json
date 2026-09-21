@@ -1,0 +1,2653 @@
+[
+  {
+    "source_group_id": "cal-0000",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0000-natural",
+      "cal-0000-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0002",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0002-natural",
+      "cal-0002-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0005",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0005-natural",
+      "cal-0005-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0007",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0007-natural",
+      "cal-0007-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0008",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0008-natural",
+      "cal-0008-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0010",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0010-natural",
+      "cal-0010-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0013",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0013-natural",
+      "cal-0013-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0015",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0015-natural",
+      "cal-0015-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0016",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0016-natural",
+      "cal-0016-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0018",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0018-natural",
+      "cal-0018-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0021",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0021-natural",
+      "cal-0021-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0023",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0023-natural",
+      "cal-0023-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0024",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0024-natural",
+      "cal-0024-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0026",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0026-natural",
+      "cal-0026-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0029",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0029-natural",
+      "cal-0029-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0031",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0031-natural",
+      "cal-0031-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0032",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0032-natural",
+      "cal-0032-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0034",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0034-natural",
+      "cal-0034-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0037",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0037-natural",
+      "cal-0037-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0039",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0039-natural",
+      "cal-0039-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0040",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0040-natural",
+      "cal-0040-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0042",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0042-natural",
+      "cal-0042-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0045",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0045-natural",
+      "cal-0045-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0047",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0047-natural",
+      "cal-0047-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0048",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0048-natural",
+      "cal-0048-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0050",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0050-natural",
+      "cal-0050-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0053",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0053-natural",
+      "cal-0053-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0055",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0055-natural",
+      "cal-0055-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0056",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0056-natural",
+      "cal-0056-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0058",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0058-natural",
+      "cal-0058-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0061",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0061-natural",
+      "cal-0061-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0063",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0063-natural",
+      "cal-0063-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0064",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0064-natural",
+      "cal-0064-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0066",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0066-natural",
+      "cal-0066-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0069",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0069-natural",
+      "cal-0069-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0071",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0071-natural",
+      "cal-0071-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0072",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0072-natural",
+      "cal-0072-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0074",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0074-natural",
+      "cal-0074-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0077",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0077-natural",
+      "cal-0077-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "cal-0079",
+    "split": "calibration",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "cal-0079-natural",
+      "cal-0079-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0000",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0000-natural",
+      "main-0000-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0002",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0002-natural",
+      "main-0002-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0005",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0005-natural",
+      "main-0005-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0007",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0007-natural",
+      "main-0007-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0008",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0008-natural",
+      "main-0008-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0010",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0010-natural",
+      "main-0010-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0013",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0013-natural",
+      "main-0013-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0015",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0015-natural",
+      "main-0015-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0016",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0016-natural",
+      "main-0016-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0018",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0018-natural",
+      "main-0018-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0021",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0021-natural",
+      "main-0021-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0023",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0023-natural",
+      "main-0023-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0024",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0024-natural",
+      "main-0024-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0026",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0026-natural",
+      "main-0026-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0029",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0029-natural",
+      "main-0029-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0031",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0031-natural",
+      "main-0031-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0032",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0032-natural",
+      "main-0032-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0034",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0034-natural",
+      "main-0034-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0037",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0037-natural",
+      "main-0037-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0039",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0039-natural",
+      "main-0039-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0040",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0040-natural",
+      "main-0040-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0042",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0042-natural",
+      "main-0042-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0045",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0045-natural",
+      "main-0045-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0047",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0047-natural",
+      "main-0047-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0048",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0048-natural",
+      "main-0048-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0050",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0050-natural",
+      "main-0050-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0053",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0053-natural",
+      "main-0053-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0055",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0055-natural",
+      "main-0055-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0056",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0056-natural",
+      "main-0056-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0058",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0058-natural",
+      "main-0058-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0061",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0061-natural",
+      "main-0061-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0063",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0063-natural",
+      "main-0063-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0064",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0064-natural",
+      "main-0064-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0066",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0066-natural",
+      "main-0066-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0069",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0069-natural",
+      "main-0069-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0071",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0071-natural",
+      "main-0071-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0072",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0072-natural",
+      "main-0072-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0074",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0074-natural",
+      "main-0074-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0077",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0077-natural",
+      "main-0077-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0079",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0079-natural",
+      "main-0079-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0080",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0080-natural",
+      "main-0080-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0082",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0082-natural",
+      "main-0082-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0085",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0085-natural",
+      "main-0085-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0087",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0087-natural",
+      "main-0087-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0088",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0088-natural",
+      "main-0088-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0090",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0090-natural",
+      "main-0090-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0093",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0093-natural",
+      "main-0093-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0095",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0095-natural",
+      "main-0095-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0096",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0096-natural",
+      "main-0096-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0098",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0098-natural",
+      "main-0098-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0101",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0101-natural",
+      "main-0101-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0103",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0103-natural",
+      "main-0103-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0104",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0104-natural",
+      "main-0104-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0106",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0106-natural",
+      "main-0106-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0109",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0109-natural",
+      "main-0109-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0111",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0111-natural",
+      "main-0111-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0112",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0112-natural",
+      "main-0112-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0114",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0114-natural",
+      "main-0114-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0117",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0117-natural",
+      "main-0117-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0119",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0119-natural",
+      "main-0119-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0120",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0120-natural",
+      "main-0120-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0122",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0122-natural",
+      "main-0122-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0125",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0125-natural",
+      "main-0125-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0127",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0127-natural",
+      "main-0127-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0128",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0128-natural",
+      "main-0128-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0130",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0130-natural",
+      "main-0130-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0133",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0133-natural",
+      "main-0133-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0135",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0135-natural",
+      "main-0135-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0136",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0136-natural",
+      "main-0136-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0138",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0138-natural",
+      "main-0138-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0141",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0141-natural",
+      "main-0141-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0143",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0143-natural",
+      "main-0143-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0144",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0144-natural",
+      "main-0144-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0146",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0146-natural",
+      "main-0146-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0149",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0149-natural",
+      "main-0149-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0151",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0151-natural",
+      "main-0151-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0152",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0152-natural",
+      "main-0152-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0154",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0154-natural",
+      "main-0154-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0157",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0157-natural",
+      "main-0157-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0159",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0159-natural",
+      "main-0159-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0160",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0160-natural",
+      "main-0160-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0162",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0162-natural",
+      "main-0162-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0165",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0165-natural",
+      "main-0165-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0167",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0167-natural",
+      "main-0167-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0168",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0168-natural",
+      "main-0168-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0170",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0170-natural",
+      "main-0170-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0173",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0173-natural",
+      "main-0173-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0175",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0175-natural",
+      "main-0175-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0176",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0176-natural",
+      "main-0176-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0178",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0178-natural",
+      "main-0178-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0181",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0181-natural",
+      "main-0181-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0183",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0183-natural",
+      "main-0183-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0184",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0184-natural",
+      "main-0184-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0186",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0186-natural",
+      "main-0186-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0189",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0189-natural",
+      "main-0189-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0191",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0191-natural",
+      "main-0191-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0192",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0192-natural",
+      "main-0192-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0194",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0194-natural",
+      "main-0194-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0197",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0197-natural",
+      "main-0197-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0199",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0199-natural",
+      "main-0199-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0200",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0200-natural",
+      "main-0200-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0202",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0202-natural",
+      "main-0202-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0205",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0205-natural",
+      "main-0205-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0207",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0207-natural",
+      "main-0207-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0208",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0208-natural",
+      "main-0208-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0210",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0210-natural",
+      "main-0210-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0213",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0213-natural",
+      "main-0213-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0215",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0215-natural",
+      "main-0215-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0216",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0216-natural",
+      "main-0216-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0218",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0218-natural",
+      "main-0218-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0221",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0221-natural",
+      "main-0221-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0223",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0223-natural",
+      "main-0223-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0224",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0224-natural",
+      "main-0224-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0226",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0226-natural",
+      "main-0226-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0229",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0229-natural",
+      "main-0229-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0231",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0231-natural",
+      "main-0231-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0232",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0232-natural",
+      "main-0232-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0234",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0234-natural",
+      "main-0234-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0237",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0237-natural",
+      "main-0237-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0239",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0239-natural",
+      "main-0239-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0240",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0240-natural",
+      "main-0240-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0242",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0242-natural",
+      "main-0242-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0245",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0245-natural",
+      "main-0245-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0247",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0247-natural",
+      "main-0247-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0248",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0248-natural",
+      "main-0248-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0250",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0250-natural",
+      "main-0250-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0253",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0253-natural",
+      "main-0253-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0255",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0255-natural",
+      "main-0255-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0256",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0256-natural",
+      "main-0256-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0258",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0258-natural",
+      "main-0258-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0261",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0261-natural",
+      "main-0261-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0263",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0263-natural",
+      "main-0263-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0264",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0264-natural",
+      "main-0264-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0266",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0266-natural",
+      "main-0266-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0269",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0269-natural",
+      "main-0269-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0271",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0271-natural",
+      "main-0271-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0272",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0272-natural",
+      "main-0272-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0274",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0274-natural",
+      "main-0274-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0277",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0277-natural",
+      "main-0277-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0279",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0279-natural",
+      "main-0279-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0280",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0280-natural",
+      "main-0280-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0282",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0282-natural",
+      "main-0282-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0285",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0285-natural",
+      "main-0285-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0287",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0287-natural",
+      "main-0287-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0288",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0288-natural",
+      "main-0288-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0290",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0290-natural",
+      "main-0290-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0293",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0293-natural",
+      "main-0293-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0295",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0295-natural",
+      "main-0295-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0296",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0296-natural",
+      "main-0296-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0298",
+    "split": "development",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0298-natural",
+      "main-0298-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0301",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0301-natural",
+      "main-0301-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0303",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0303-natural",
+      "main-0303-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0304",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0304-natural",
+      "main-0304-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0306",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0306-natural",
+      "main-0306-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0309",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0309-natural",
+      "main-0309-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0311",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0311-natural",
+      "main-0311-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0312",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0312-natural",
+      "main-0312-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0314",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0314-natural",
+      "main-0314-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0317",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0317-natural",
+      "main-0317-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0319",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0319-natural",
+      "main-0319-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0320",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0320-natural",
+      "main-0320-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0322",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0322-natural",
+      "main-0322-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0325",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0325-natural",
+      "main-0325-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0327",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0327-natural",
+      "main-0327-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0328",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0328-natural",
+      "main-0328-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0330",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0330-natural",
+      "main-0330-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0333",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0333-natural",
+      "main-0333-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0335",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0335-natural",
+      "main-0335-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0336",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0336-natural",
+      "main-0336-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0338",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0338-natural",
+      "main-0338-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0341",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0341-natural",
+      "main-0341-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0343",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0343-natural",
+      "main-0343-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0344",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0344-natural",
+      "main-0344-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0346",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0346-natural",
+      "main-0346-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0349",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0349-natural",
+      "main-0349-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0351",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0351-natural",
+      "main-0351-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0352",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0352-natural",
+      "main-0352-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0354",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0354-natural",
+      "main-0354-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0357",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0357-natural",
+      "main-0357-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0359",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0359-natural",
+      "main-0359-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0360",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0360-natural",
+      "main-0360-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0362",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0362-natural",
+      "main-0362-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0365",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0365-natural",
+      "main-0365-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0367",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0367-natural",
+      "main-0367-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0368",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0368-natural",
+      "main-0368-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0370",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0370-natural",
+      "main-0370-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0373",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0373-natural",
+      "main-0373-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0375",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0375-natural",
+      "main-0375-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0376",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0376-natural",
+      "main-0376-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0378",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0378-natural",
+      "main-0378-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0381",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0381-natural",
+      "main-0381-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0383",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0383-natural",
+      "main-0383-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0384",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0384-natural",
+      "main-0384-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0386",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0386-natural",
+      "main-0386-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0389",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0389-natural",
+      "main-0389-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0391",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0391-natural",
+      "main-0391-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0392",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0392-natural",
+      "main-0392-controlled"
+    ],
+    "generator": "codex",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0394",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0394-natural",
+      "main-0394-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0397",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0397-natural",
+      "main-0397-controlled"
+    ],
+    "generator": "deepseek",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0399",
+    "split": "validation",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0399-natural",
+      "main-0399-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  },
+  {
+    "source_group_id": "main-0439",
+    "split": "locked_test",
+    "suite": "StyleBench-ZH",
+    "instance_ids": [
+      "main-0439-natural",
+      "main-0439-controlled"
+    ],
+    "generator": "glm",
+    "origin": "synthetic fictional task world"
+  }
+]

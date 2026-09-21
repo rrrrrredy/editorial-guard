@@ -1,0 +1,13 @@
+{
+  "name": "editorial-zh",
+  "language": "zh",
+  "locale": "zh-Hans",
+  "preferences": [
+    "自然完整段落",
+    "保留判断和论证",
+    "成稿直接进入内容",
+    "避免无信息模板反转",
+    "不强迫口语化"
+  ],
+  "global_character_limit": null
+}

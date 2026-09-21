@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Editorial Guard opaque solver task view",
+  "type": "object",
+  "properties": {
+    "source_group_id": {
+      "type": "string"
+    },
+    "parent_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "suite": {
+      "enum": [
+        "StyleBench-ZH",
+        "DeliveryBench-ZH"
+      ]
+    },
+    "track": {
+      "enum": [
+        "detect",
+        "generate",
+        "workflow"
+      ]
+    },
+    "language": {
+      "type": "string"
+    },
+    "locale": {
+      "type": "string"
+    },
+    "source_language": {
+      "type": "string"
+    },
+    "is_translation": {
+      "type": "boolean"
+    },
+    "language_scope_status": {
+      "enum": [
+        "supported",
+        "unsupported",
+        "unvalidated"
+      ]
+    },
+    "genre": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "delivery_channel": {
+      "type": "string"
+    },
+    "instruction": {
+      "type": "string"
+    },
+    "style_profile": {
+      "type": "string"
+    },
+    "source_bundle": {
+      "type": "object"
+    },
+    "protected_spans": {
+      "type": "array"
+    },
+    "constraints": {
+      "type": "object"
+    },
+    "id": {
+      "type": "string"
+    },
+    "input_text": {
+      "type": "string"
+    },
+    "view_status": {
+      "const": "task_view_not_independent_sample"
+    }
+  },
+  "required": [
+    "id",
+    "parent_id",
+    "source_group_id",
+    "track",
+    "locale",
+    "instruction",
+    "source_bundle",
+    "view_status"
+  ],
+  "additionalProperties": false,
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "track": {
+            "const": "generate"
+          }
+        }
+      },
+      "then": {
+        "not": {
+          "required": [
+            "input_text"
+          ]
+        }
+      },
+      "else": {
+        "required": [
+          "input_text"
+        ]
+      }
+    }
+  ]
+}

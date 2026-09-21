@@ -1,0 +1,32 @@
+name: Offline validation
+on:
+  push:
+    branches: [main]
+  pull_request:
+permissions:
+  contents: read
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-python@5fda3b95a4ea91299a34e894583c3862153e4b97 # v7.0.0
+        with:
+          python-version: '3.11'
+      - run: python -m pip install -r requirements-runtime.lock -r requirements-dev.lock
+      - run: python -m pip install --no-build-isolation .
+      - run: python -m pytest -q
+      - run: python scripts/sync_prompts.py --check
+      - run: python scripts/check_provider_scope.py
+      - run: python scripts/replay_results.py --directory reports
+      - run: python -m build --no-isolation
+      - run: python scripts/check_distribution.py --directory dist
+      - run: python scripts/build_site.py --output site-build --commit ${{ github.sha }}
+      - run: python scripts/check_site.py --directory site-build

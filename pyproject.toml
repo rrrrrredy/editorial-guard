@@ -1,0 +1,30 @@
+[build-system]
+requires = ["setuptools>=77", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "editorial-guard"
+version = "0.1.0"
+description = "Chinese style editing and delivery validation"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Song Luo"}]
+dependencies = ["jsonschema>=4.23,<5"]
+
+[project.scripts]
+editorial-guard = "editorial_guard.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+markers = ["unit: deterministic local checks", "integration_mock: adapters with simulated model or host responses", "integration_live: recorded real provider or host integration", "benchmark: frozen dataset and model comparisons"]
+
+[tool.setuptools.package-data]
+editorial_guard = ["schemas/*.json"]
+
+[tool.setuptools.cmdclass]
+build_py = "editorial_guard._build.ToolBuild"

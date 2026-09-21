@@ -1,0 +1,462 @@
+{
+  "protocol_version": "0.2.0",
+  "experiment": "three_provider_core",
+  "cells": [
+    {
+      "id": "main-0425-controlled",
+      "provider": "codex",
+      "method": "B0",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "codex",
+      "method": "B1",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "codex",
+      "method": "B1",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "codex",
+      "method": "B1",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "codex",
+      "method": "B3",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "codex",
+      "method": "B4",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "codex",
+      "method": "B4",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "codex",
+      "method": "B4",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "codex",
+      "method": "B5",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "deepseek",
+      "method": "B0",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "deepseek",
+      "method": "B1",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "deepseek",
+      "method": "B1",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "deepseek",
+      "method": "B1",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "deepseek",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "deepseek",
+      "method": "B3",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "deepseek",
+      "method": "B4",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "deepseek",
+      "method": "B4",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "deepseek",
+      "method": "B4",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "deepseek",
+      "method": "B5",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "glm",
+      "method": "B0",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "glm",
+      "method": "B1",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "glm",
+      "method": "B1",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "glm",
+      "method": "B1",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "glm",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "glm",
+      "method": "B3",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "glm",
+      "method": "B4",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "glm",
+      "method": "B4",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "glm",
+      "method": "B4",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-controlled",
+      "provider": "glm",
+      "method": "B5",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "codex",
+      "method": "B0",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "codex",
+      "method": "B1",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "codex",
+      "method": "B1",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "codex",
+      "method": "B1",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "codex",
+      "method": "B3",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "codex",
+      "method": "B4",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "codex",
+      "method": "B4",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "codex",
+      "method": "B4",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "codex",
+      "method": "B5",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "deepseek",
+      "method": "B0",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "deepseek",
+      "method": "B1",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "deepseek",
+      "method": "B1",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "deepseek",
+      "method": "B1",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "deepseek",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "deepseek",
+      "method": "B3",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "deepseek",
+      "method": "B4",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "deepseek",
+      "method": "B4",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "deepseek",
+      "method": "B4",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "deepseek",
+      "method": "B5",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "glm",
+      "method": "B0",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "glm",
+      "method": "B1",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "glm",
+      "method": "B1",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "glm",
+      "method": "B1",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "glm",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "glm",
+      "method": "B3",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "glm",
+      "method": "B4",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "glm",
+      "method": "B4",
+      "repeat": 1,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "glm",
+      "method": "B4",
+      "repeat": 2,
+      "mode": "both"
+    },
+    {
+      "id": "main-0439-controlled",
+      "provider": "glm",
+      "method": "B5",
+      "repeat": 0,
+      "mode": "both"
+    }
+  ],
+  "family_ids": [
+    "main-0425",
+    "main-0439"
+  ],
+  "instance_ids": [
+    "main-0425-controlled",
+    "main-0439-controlled"
+  ],
+  "judge_policy": "glm_primary_except_author",
+  "primary_comparison": [
+    "B1",
+    "B4"
+  ],
+  "repeats": 3,
+  "denominator": "all registered cells; previously retained and new calls reported separately",
+  "selection": "Among families represented by retained prior experiment records, select the smallest source_group_id in each suite; no outcome ranking",
+  "exposure": "Retrospective retained outputs plus prospectively registered missing cells on already exposed source families; not a fresh held-out evaluation",
+  "B3_support": "native-requested for Codex, prompt-equivalent for APIs; actual load observation reported separately",
+  "bootstrap_unit": "source_group_id",
+  "inference_limit": "Two source families, one per suite; descriptive example study only, no population superiority claim",
+  "strata": [
+    {
+      "source_group_id": "main-0425",
+      "suite": "DeliveryBench-ZH",
+      "genre": "邮件沟通",
+      "stage": "final",
+      "style_profile": "editorial-zh"
+    },
+    {
+      "source_group_id": "main-0439",
+      "suite": "StyleBench-ZH",
+      "genre": "邮件沟通",
+      "stage": "final",
+      "style_profile": "general-zh"
+    }
+  ]
+}

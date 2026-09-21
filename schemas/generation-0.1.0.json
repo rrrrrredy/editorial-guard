@@ -1,0 +1,20 @@
+{
+  "type": "object",
+  "properties": {
+    "instruction": {
+      "type": "string"
+    },
+    "input_text": {
+      "type": "string"
+    },
+    "style_variant": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "instruction",
+    "input_text",
+    "style_variant"
+  ],
+  "additionalProperties": false
+}

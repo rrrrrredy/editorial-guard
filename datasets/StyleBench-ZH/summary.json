@@ -1,0 +1,66 @@
+{
+  "families": 241,
+  "instances": 482,
+  "splits": {
+    "calibration": 80,
+    "development": 300,
+    "validation": 100,
+    "locked_test": 2
+  },
+  "suites": {
+    "StyleBench-ZH": 482
+  },
+  "disagreements": {
+    "agreement": 131,
+    "disputed": 339,
+    "insufficient_evidence": 12
+  },
+  "languages": {
+    "zh-Hans": 482
+  },
+  "annotation_sources": {
+    "model_inferred": 241,
+    "mixed": 241
+  },
+  "independent_judgments": 952,
+  "confirmed_no_edit": 111,
+  "quality": {
+    "task_validity": {
+      "model_agreement_valid": 470,
+      "insufficient_evidence": 12
+    },
+    "review_flags": {
+      "original_source_fidelity_contested": 225,
+      "semantic_uncertainty": 30,
+      "insufficient_independent_annotations": 12,
+      "required_literal_missing": 4
+    },
+    "confirmed_no_edit_instances": 111,
+    "agreed_four_states": {
+      "[False, False]": 120,
+      "[False, True]": 31,
+      "None": 257,
+      "[True, True]": 57,
+      "[True, False]": 17
+    },
+    "required_literal_missing_instances": 4,
+    "scope": "automated judgments; flags remain visible, no human validation or forced consensus"
+  },
+  "planned_main_families": 250,
+  "main_families": 250,
+  "held_back_instances": 98,
+  "generation_cohorts": {
+    "codex|unknown|unknown": 20,
+    "codex|codex|7437d320a6ec7516da22623e9309d64dac4fddd825c3546669b59481f5371ef9": 142,
+    "deepseek|unknown|unknown": 18,
+    "glm|codex|unknown": 20,
+    "glm|chat_completions|3bad715805d1092d10de81584139e7a1b9a956435e8f7ea5510ad2ee8cc11fc8": 140,
+    "deepseek|chat_completions|c7fc5ae8d084ed53e772235451d7b8c93a9715d87b81042ec2d5252db21c4b22": 138,
+    "deepseek|chat_completions|unknown": 2,
+    "glm|codex|fdeeba3fe710e2e1c0dcb4f59d3b3d91dee4c44d8479cb6b2bfa6eb5103ba9d5": 2
+  },
+  "designed_boundary_instances": 308,
+  "all_labels_automated": true,
+  "human_validation": false,
+  "independent_family_caveat": "distinct fictional task worlds drawn from seven base templates; lexical deduplication does not prove semantic independence"
+}

@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: Please cite the software version. Datasets and research use CC BY 4.0 under
+  the path-specific terms in LICENSING.md; dataset citations are provided separately.
+title: Editorial Guard
+version: 0.1.0
+authors:
+- family-names: Luo
+  given-names: Song
+repository-code: https://github.com/rrrrrredy/editorial-guard
+license: MIT
+type: software

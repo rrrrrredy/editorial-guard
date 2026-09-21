@@ -1,0 +1,11 @@
+cff-version: 1.2.0
+message: Please cite this dataset and version. Labels are automated; there is no human
+  preference validation.
+title: DeliveryBench-ZH
+type: dataset
+version: 0.1.0
+authors:
+- family-names: Luo
+  given-names: Song
+repository-code: https://github.com/rrrrrredy/editorial-guard
+license: CC-BY-4.0

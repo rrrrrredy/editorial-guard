@@ -1,0 +1,152 @@
+{
+  "protocol_version": "0.2.0",
+  "experiment": "H2",
+  "cells": [
+    {
+      "id": "main-0425-H2-0",
+      "provider": "codex",
+      "method": "B0",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-0",
+      "provider": "codex",
+      "method": "B1",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-0",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "style"
+    },
+    {
+      "id": "main-0425-H2-0",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "process"
+    },
+    {
+      "id": "main-0425-H2-0",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-1",
+      "provider": "codex",
+      "method": "B0",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-1",
+      "provider": "codex",
+      "method": "B1",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-1",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "style"
+    },
+    {
+      "id": "main-0425-H2-1",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "process"
+    },
+    {
+      "id": "main-0425-H2-1",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-2",
+      "provider": "codex",
+      "method": "B0",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-2",
+      "provider": "codex",
+      "method": "B1",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-2",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "style"
+    },
+    {
+      "id": "main-0425-H2-2",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "process"
+    },
+    {
+      "id": "main-0425-H2-2",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-3",
+      "provider": "codex",
+      "method": "B0",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-3",
+      "provider": "codex",
+      "method": "B1",
+      "repeat": 0,
+      "mode": "both"
+    },
+    {
+      "id": "main-0425-H2-3",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "style"
+    },
+    {
+      "id": "main-0425-H2-3",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "process"
+    },
+    {
+      "id": "main-0425-H2-3",
+      "provider": "codex",
+      "method": "B2",
+      "repeat": 0,
+      "mode": "both"
+    }
+  ],
+  "judge_policy": "glm_primary_except_author",
+  "source_group_ids": [
+    "main-0425"
+  ],
+  "denominator": "all 20 registered cells",
+  "scope": "Fixed one-author representative subset; four programmatic states remain model-inferred issues, not subjective gold"
+}

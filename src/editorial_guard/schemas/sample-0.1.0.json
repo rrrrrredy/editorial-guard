@@ -1,0 +1,437 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Editorial Guard sample",
+  "type": "object",
+  "properties": {
+    "source_group_id": {
+      "type": "string"
+    },
+    "parent_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "suite": {
+      "enum": [
+        "StyleBench-ZH",
+        "DeliveryBench-ZH"
+      ]
+    },
+    "track": {
+      "enum": [
+        "detect",
+        "rewrite",
+        "generate",
+        "workflow"
+      ]
+    },
+    "split": {
+      "enum": [
+        "calibration",
+        "development",
+        "validation",
+        "locked_test",
+        "challenge",
+        "disputed",
+        "regression"
+      ]
+    },
+    "language": {
+      "type": "string"
+    },
+    "locale": {
+      "type": "string"
+    },
+    "source_language": {
+      "type": "string"
+    },
+    "is_translation": {
+      "type": "boolean"
+    },
+    "language_scope_status": {
+      "enum": [
+        "supported",
+        "unsupported",
+        "unvalidated"
+      ]
+    },
+    "genre": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "string"
+    },
+    "stage": {
+      "type": "string"
+    },
+    "delivery_channel": {
+      "type": "string"
+    },
+    "instruction": {
+      "type": "string"
+    },
+    "style_profile": {
+      "type": "string"
+    },
+    "source_bundle": {
+      "type": "object"
+    },
+    "protected_spans": {
+      "type": "array"
+    },
+    "required_claims": {
+      "type": "array"
+    },
+    "constraints": {
+      "type": "object"
+    },
+    "issues": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string"
+          },
+          "occurrence": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "suite": {
+            "enum": [
+              "style",
+              "process"
+            ]
+          },
+          "category": {
+            "type": "string"
+          },
+          "severity": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 4
+          },
+          "reason": {
+            "type": "string"
+          },
+          "action": {
+            "enum": [
+              "rewrite",
+              "remove",
+              "preserve",
+              "review"
+            ]
+          },
+          "start": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "end": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "rule": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "text",
+          "occurrence",
+          "suite",
+          "category",
+          "severity",
+          "reason",
+          "action",
+          "start",
+          "end",
+          "rule"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "acceptable_references": {
+      "type": "array"
+    },
+    "provenance": {
+      "type": "object",
+      "properties": {
+        "generator": {
+          "type": "string"
+        },
+        "route": {
+          "enum": [
+            "natural",
+            "controlled"
+          ]
+        }
+      },
+      "required": [
+        "generator",
+        "route"
+      ]
+    },
+    "generation_config": {
+      "type": "object"
+    },
+    "annotation_records": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "provider": {
+            "enum": [
+              "codex",
+              "deepseek",
+              "glm"
+            ]
+          },
+          "request_id": {
+            "type": "string"
+          },
+          "annotation_version": {
+            "type": "string"
+          },
+          "annotation": {
+            "type": "object",
+            "properties": {
+              "id": {
+                "type": "string"
+              },
+              "valid_task": {
+                "type": "boolean"
+              },
+              "language_scope_status": {
+                "enum": [
+                  "supported",
+                  "unsupported",
+                  "unvalidated"
+                ]
+              },
+              "issues": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "text": {
+                      "type": "string"
+                    },
+                    "occurrence": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "suite": {
+                      "enum": [
+                        "style",
+                        "process"
+                      ]
+                    },
+                    "category": {
+                      "type": "string"
+                    },
+                    "severity": {
+                      "type": "integer",
+                      "minimum": 1,
+                      "maximum": 4
+                    },
+                    "reason": {
+                      "type": "string"
+                    },
+                    "action": {
+                      "enum": [
+                        "rewrite",
+                        "remove",
+                        "preserve",
+                        "review"
+                      ]
+                    },
+                    "start": {
+                      "type": "integer",
+                      "minimum": 0
+                    },
+                    "end": {
+                      "type": "integer",
+                      "minimum": 1
+                    },
+                    "rule": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "text",
+                    "occurrence",
+                    "suite",
+                    "category",
+                    "severity",
+                    "reason",
+                    "action",
+                    "start",
+                    "end",
+                    "rule"
+                  ],
+                  "additionalProperties": false
+                }
+              },
+              "style_scores": {
+                "type": "object",
+                "properties": {
+                  "template_dependence": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4
+                  },
+                  "expression_efficiency": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4
+                  },
+                  "coherence": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4
+                  },
+                  "scene_fit": {
+                    "type": "integer",
+                    "minimum": 0,
+                    "maximum": 4
+                  }
+                },
+                "required": [
+                  "template_dependence",
+                  "expression_efficiency",
+                  "coherence",
+                  "scene_fit"
+                ],
+                "additionalProperties": false
+              },
+              "process_problem": {
+                "type": "boolean"
+              },
+              "style_problem": {
+                "type": "boolean"
+              },
+              "source_fidelity": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "uncertain"
+                ]
+              },
+              "task_satisfied": {
+                "enum": [
+                  "pass",
+                  "fail",
+                  "uncertain"
+                ]
+              },
+              "no_edit_needed": {
+                "type": "boolean"
+              },
+              "protected_reasons": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              },
+              "reason": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "valid_task",
+              "language_scope_status",
+              "issues",
+              "style_scores",
+              "process_problem",
+              "style_problem",
+              "source_fidelity",
+              "task_satisfied",
+              "no_edit_needed",
+              "protected_reasons",
+              "reason"
+            ],
+            "additionalProperties": false
+          }
+        },
+        "required": [
+          "provider",
+          "request_id",
+          "annotation_version",
+          "annotation"
+        ]
+      }
+    },
+    "disagreement_status": {
+      "enum": [
+        "unannotated",
+        "agreement",
+        "disputed",
+        "insufficient_evidence"
+      ]
+    },
+    "oracle_type": {
+      "enum": [
+        "programmatic",
+        "controlled_transform",
+        "model_inferred",
+        "mixed"
+      ]
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "rubric_version": {
+      "type": "string"
+    },
+    "id": {
+      "type": "string"
+    },
+    "variant_id": {
+      "type": "string"
+    },
+    "input_text": {
+      "type": "string"
+    },
+    "content_hash": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    }
+  },
+  "required": [
+    "source_group_id",
+    "parent_id",
+    "suite",
+    "track",
+    "split",
+    "language",
+    "locale",
+    "source_language",
+    "is_translation",
+    "language_scope_status",
+    "genre",
+    "audience",
+    "stage",
+    "delivery_channel",
+    "instruction",
+    "style_profile",
+    "source_bundle",
+    "protected_spans",
+    "required_claims",
+    "constraints",
+    "issues",
+    "acceptable_references",
+    "provenance",
+    "generation_config",
+    "annotation_records",
+    "disagreement_status",
+    "oracle_type",
+    "schema_version",
+    "rubric_version",
+    "id",
+    "variant_id",
+    "input_text",
+    "content_hash"
+  ],
+  "additionalProperties": false
+}

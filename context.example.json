@@ -1,0 +1,9 @@
+{
+  "instruction": "保留全部源信息，只交付中文正文。",
+  "genre": "project_documentation",
+  "stage": "final",
+  "locale": "zh-Hans",
+  "profile": "general-zh",
+  "source_bundle": {},
+  "constraints": {}
+}

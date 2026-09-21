@@ -1,0 +1,27 @@
+{
+  "providers": {
+    "deepseek": {
+      "model": "deepseek-flash",
+      "base_url": "https://api.deepseek.com",
+      "parameters": {
+        "thinking": {
+          "type": "disabled"
+        }
+      }
+    },
+    "glm": {
+      "model": "glm-5.3",
+      "base_url": "https://open.bigmodel.cn/api/paas/v4",
+      "parameters": {
+        "reasoning_effort": "low"
+      }
+    },
+    "codex": {
+      "model": "gpt-6-astra",
+      "parameters": {
+        "reasoning_effort": "low"
+      },
+      "native_skill_root": "skills"
+    }
+  }
+}

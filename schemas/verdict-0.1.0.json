@@ -1,0 +1,153 @@
+{
+  "type": "object",
+  "properties": {
+    "fidelity": {
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain"
+      ]
+    },
+    "requirements": {
+      "enum": [
+        "pass",
+        "fail",
+        "uncertain"
+      ]
+    },
+    "target_improvement": {
+      "enum": [
+        "better",
+        "tie",
+        "worse",
+        "uncertain"
+      ]
+    },
+    "no_new_serious_issue": {
+      "type": "boolean"
+    },
+    "process_clean": {
+      "type": "boolean"
+    },
+    "original_no_edit_needed": {
+      "type": "boolean"
+    },
+    "evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "original_span": {
+            "type": "string"
+          },
+          "candidate_span": {
+            "type": "string"
+          },
+          "reason": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "original_span",
+          "candidate_span",
+          "reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "reason": {
+      "type": "string"
+    },
+    "original_style_scores": {
+      "type": "object",
+      "properties": {
+        "template_dependence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "expression_efficiency": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "coherence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "scene_fit": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        }
+      },
+      "required": [
+        "template_dependence",
+        "expression_efficiency",
+        "coherence",
+        "scene_fit"
+      ],
+      "additionalProperties": false
+    },
+    "candidate_style_scores": {
+      "type": "object",
+      "properties": {
+        "template_dependence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "expression_efficiency": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "coherence": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        },
+        "scene_fit": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 4
+        }
+      },
+      "required": [
+        "template_dependence",
+        "expression_efficiency",
+        "coherence",
+        "scene_fit"
+      ],
+      "additionalProperties": false
+    },
+    "original_process_spans": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "candidate_process_spans": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "required": [
+    "fidelity",
+    "requirements",
+    "target_improvement",
+    "no_new_serious_issue",
+    "process_clean",
+    "original_no_edit_needed",
+    "evidence",
+    "reason",
+    "original_style_scores",
+    "candidate_style_scores",
+    "original_process_spans",
+    "candidate_process_spans"
+  ],
+  "additionalProperties": false
+}

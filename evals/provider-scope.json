@@ -1,0 +1,15 @@
+{
+  "providers": [
+    "codex",
+    "deepseek",
+    "glm"
+  ],
+  "status": "scoped_experiment_registered",
+  "scope_revision": "2026-09-21",
+  "existing_locked_partition_exposed": true,
+  "prior_aggregate_results_valid": false,
+  "protocol_version": "0.2.0",
+  "core_cells": 60,
+  "H2_cells": 20,
+  "retrospective_records_separately_disclosed": true
+}
