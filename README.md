@@ -2,7 +2,7 @@
 
 简体中文表达编辑与交付验收工具。StyleBench-ZH 判断模板依赖、表达效率、连贯性和场景匹配；DeliveryBench-ZH 判断不合交付阶段的过程旁白。两套任务独立评分，共享事实保真检查。
 
-[项目站](https://rrrrrredy.github.io/editorial-guard/) · [v0.1.0 下载](https://github.com/rrrrrredy/editorial-guard/releases/tag/v0.1.0) · [结果与局限](reports/results.md)
+[项目站](https://rrrrrredy.github.io/editorial-guard/) · [v0.1.1 下载](https://github.com/rrrrrredy/editorial-guard/releases/tag/v0.1.1) · [结果与局限](reports/results.md)
 
 本项目不检测作者是否为 AI，不以逃避检测为目标。数据来自程序事实底稿和真实模型调用，标注与评审由模型完成，没有人工标注或人类偏好验证。实验规模、分歧、失败和支持范围见 [实验协议](docs/experiment-protocol.md) 与 reports/ 中相应版本结果。
 

@@ -12,7 +12,7 @@ def build(root,destination,base_path,commit,release_url=None):
     titles={'index':'首页','standards':'任务与标准','datasets':'数据样本','results':'真实结果','install':'安装与复现','license':'许可与引用','404':'页面不存在'}
     downloads='<a href="'+html.escape(release_url,quote=True)+'">下载此版本 Release</a>' if release_url else '此本地构建尚未绑定已发布下载包；正式下载链接在发布验收后提供。'
     for path in (root/'site/pages').glob('*.html'):
-        text=template.replace('{{TITLE}}',titles[path.stem]).replace('{{CONTENT}}',path.read_text(encoding='utf-8')).replace('{{BASE}}',base_path).replace('{{VERSION}}','0.1.0').replace('{{DOWNLOADS}}',downloads)
+        text=template.replace('{{TITLE}}',titles[path.stem]).replace('{{CONTENT}}',path.read_text(encoding='utf-8')).replace('{{BASE}}',base_path).replace('{{VERSION}}','0.1.1').replace('{{DOWNLOADS}}',downloads)
         (out/path.name).write_text(text,encoding='utf-8',newline='\n')
     for name in ('style.css','app.js'):
         (out/'assets'/name).write_text((root/'site/assets'/name).read_text(encoding='utf-8'),encoding='utf-8',newline='\n')
@@ -23,7 +23,7 @@ def build(root,destination,base_path,commit,release_url=None):
     source=root/'reports/public_summary.json';results=json.loads(source.read_text(encoding='utf-8')) if source.exists() else {'summary':'正式实验尚未运行。'}
     (out/'assets/results.json').write_text(json.dumps(results,ensure_ascii=False),encoding='utf-8',newline='\n')
     (out/'.nojekyll').write_text('',encoding='utf-8',newline='\n')
-    manifest={'version':'0.1.0','data_version':'0.1.0','build_commit':commit,'base_path':base_path,'samples':len(samples),'files':{str(p.relative_to(out)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='manifest.json'}}
+    manifest={'version':'0.1.1','data_version':'0.1.1','build_commit':commit,'base_path':base_path,'samples':len(samples),'files':{str(p.relative_to(out)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='manifest.json'}}
     (out/'manifest.json').write_text(json.dumps(manifest,indent=2,sort_keys=True),encoding='utf-8',newline='\n')
     return manifest
 if __name__=='__main__':

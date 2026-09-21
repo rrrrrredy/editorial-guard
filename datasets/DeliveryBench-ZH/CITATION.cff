@@ -3,7 +3,7 @@ message: Please cite this dataset and version. Labels are automated; there is no
   preference validation.
 title: DeliveryBench-ZH
 type: dataset
-version: 0.1.0
+version: 0.1.1
 authors:
 - family-names: Luo
   given-names: Song

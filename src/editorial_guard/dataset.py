@@ -13,12 +13,23 @@ PROVIDERS=('codex','deepseek','glm')
 GENRES=('行业分析','技术解释','项目文档','工作报告','教程','邮件沟通','社交媒体短文')
 TOPICS=('设备巡检','仓储温控','社区图书','园区公交','远程教学','档案修复','农业灌溉','海岸监测','实验室排班','公共照明','博物馆导览','雨水回收','餐厅预订','工厂质检','机器人分拣','电池回收','城市绿化','水务巡查','校园配送','车间通风','气象观测','文化活动','机房散热','港口装卸','食品冷链','林地巡护','运动场预约','出版校对','工地扬尘','无障碍导航','声学测试','桥梁维护','渔业记录','文物数字化','河道清淤','消防演练','助听设备','光伏巡检','湿地保护','种子储存','地下管网','船舶排期','家具维修','缆车运行','道路融雪','陶瓷烧制','废水采样','制衣裁剪','隧道通风','轨道润滑','山地救援','陶片归档','纸张防潮','声场校准','候鸟计数','茶叶分级','灯塔巡查','菌种运输')
 
+def _replace_snapshot(temporary,path):
+    """Keep replacement atomic while tolerating short-lived Windows file locks."""
+    for attempt in range(7):
+        try:
+            temporary.replace(path)
+            return
+        except PermissionError as exc:
+            if getattr(exc,'winerror',None) not in (5,32,33) or attempt==6:
+                raise
+            time.sleep(0.01 * (2 ** attempt))
+
 def write_json(path,value):
     path=Path(path);path.parent.mkdir(parents=True,exist_ok=True)
     temporary=path.with_name(path.name+'.'+uuid.uuid4().hex+'.new')
     try:
         temporary.write_text(json.dumps(value,ensure_ascii=False,indent=2),encoding='utf-8')
-        temporary.replace(path)
+        _replace_snapshot(temporary,path)
     finally:
         temporary.unlink(missing_ok=True)
 
@@ -30,7 +41,7 @@ def write_jsonl(path,rows):
     try:
         with temporary.open('w',encoding='utf-8',newline='\n') as stream:
             for row in rows:stream.write(json.dumps(row,ensure_ascii=False)+'\n')
-        temporary.replace(path)
+        _replace_snapshot(temporary,path)
     finally:
         temporary.unlink(missing_ok=True)
 

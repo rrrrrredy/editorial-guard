@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.1
+
+- Retry transient Windows file locks during atomic snapshot replacement, with a bounded wait and preservation of the previous snapshot on failure.
+- Publish the same benchmark records and measured results as 0.1.0; no model experiments or annotations were rerun for this fix.
+
 ## 0.1.0
 
 - Separate Chinese style editing and delivery-language checks with shared source-fidelity validation.
