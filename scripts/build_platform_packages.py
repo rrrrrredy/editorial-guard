@@ -6,10 +6,14 @@ ROOT = Path(__file__).resolve().parents[1]
 VERSION = '0.2.0'
 SKILL = 'editorial-guard-zh'
 
+def text_bytes(path):
+    # Canonical LF makes package metadata independent of checkout platform.
+    return path.read_text(encoding='utf-8').encode('utf-8')
+
 def skill_files(workbuddy=False):
-    files = {p.relative_to(ROOT/'skills'/SKILL).as_posix(): p.read_bytes()
+    files = {p.relative_to(ROOT/'skills'/SKILL).as_posix(): text_bytes(p)
              for p in sorted((ROOT/'skills'/SKILL).rglob('*')) if p.is_file()}
-    files['LICENSE'] = (ROOT/'LICENSE').read_bytes()
+    files['LICENSE'] = text_bytes(ROOT/'LICENSE')
     if workbuddy:
         files = {n: v for n,v in files.items() if not n.startswith('agents/')}
         text = files['SKILL.md'].decode('utf-8')
@@ -38,7 +42,7 @@ def check_avatar(data):
 
 def plugin_files(kind):
     folder=ROOT/'platforms/workbuddy'/('editorial-guard-'+kind)
-    files={p.relative_to(folder).as_posix():p.read_bytes() for p in sorted(folder.rglob('*')) if p.is_file()}
+    files={p.relative_to(folder).as_posix():text_bytes(p) for p in sorted(folder.rglob('*')) if p.is_file()}
     meta=json.loads(files['.codebuddy-plugin/plugin.json'])
     ids=[PurePosixPath(a).stem for a in meta['agents']]
     if meta['agentName'] not in ids or meta['defaultInitPrompt']!=meta['quickPrompts'][0]:raise ValueError('Invalid entrypoint')
@@ -57,7 +61,7 @@ def plugin_files(kind):
     for name in avatar_names:
         data=(ROOT/'platforms/workbuddy/avatars'/name).read_bytes();check_avatar(data);files['avatars/'+name]=data
     files.update({'skills/'+SKILL+'/'+name:data for name,data in skill_files(True).items()})
-    files['LICENSE']=(ROOT/'LICENSE').read_bytes()
+    files['LICENSE']=text_bytes(ROOT/'LICENSE')
     for path in meta['skills']:
         if path.removeprefix('./')+'/SKILL.md' not in files:raise ValueError('Missing embedded skill')
     return {folder.name+'/'+name:data for name,data in files.items()}
