@@ -5,8 +5,9 @@ import hashlib
 import json
 import re
 from dataclasses import dataclass, field
+from .structure import structure_changes
 
-RULE_VERSION = "0.1.2"
+RULE_VERSION = "0.2.0"
 MODES = ('style', 'process', 'both')
 
 @dataclass(frozen=True)
@@ -22,6 +23,7 @@ class Context:
     source_bundle: dict = field(default_factory=dict)
     protected_spans: tuple = ()
     constraints: dict = field(default_factory=dict)
+    voice_sample: str = ''
 
     def __post_init__(self):
         if self.mode not in MODES: raise ValueError('Unknown editing mode')
@@ -106,6 +108,8 @@ def verify_edit(original,candidate,context=None,source_bundle=None):
     protected=[original[a:b] for a,b in protected_ranges(original,context.protected_spans)]
     for value,count in collections.Counter(protected).items():
         if candidate.count(value)<count:reasons.append('protected_span_changed')
+    structure = structure_changes(original, candidate, allow_heading_edits=context.constraints.get('allow_heading_edits') is True)
+    if structure: reasons.append('document_structure_changed')
     # Conservative lexical signals can block pending semantic review, not prove all facts.
     numbers=lambda x:collections.Counter(re.findall(r'(?<![A-Za-z])\d+(?:\.\d+)?(?:%|％|万元|亿元|元|摄氏度|小时|天|年|月|日|个|台|次|人)?',x))
     if numbers(original)!=numbers(candidate):reasons.append('numeric_claim_changed')
@@ -117,7 +121,7 @@ def verify_edit(original,candidate,context=None,source_bundle=None):
         if required not in candidate:reasons.append('required_literal_missing')
     max_chars=context.constraints.get('max_chars')
     if max_chars is not None and len(candidate)>max_chars:reasons.append('length_constraint')
-    return {'status':'fail' if reasons else 'unchecked','language_scope_status':scope,'reasons':sorted(set(reasons)),'input_hash':content_hash(original),'candidate_hash':content_hash(candidate),'rule_version':RULE_VERSION,'semantic_review_required':True,'scope':'source_fidelity; not independent world-fact verification'}
+    return {'status':'fail' if reasons else 'unchecked','language_scope_status':scope,'reasons':sorted(set(reasons)),'input_hash':content_hash(original),'candidate_hash':content_hash(candidate),'rule_version':RULE_VERSION,'semantic_review_required':True,'structure_changes':structure,'scope':'source_fidelity; not independent world-fact verification'}
 
 PUBLIC_FIELDS=('id','source_group_id','suite','track','language','locale','source_language','is_translation','language_scope_status','genre','audience','stage','delivery_channel','instruction','style_profile','source_bundle','input_text','protected_spans','constraints')
 def public_input(record):

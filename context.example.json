@@ -5,5 +5,6 @@
   "locale": "zh-Hans",
   "profile": "general-zh",
   "source_bundle": {},
-  "constraints": {}
+  "constraints": {},
+  "voice_sample": ""
 }

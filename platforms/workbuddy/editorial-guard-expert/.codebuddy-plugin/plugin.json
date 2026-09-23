@@ -1,0 +1,66 @@
+{
+  "name": "editorial-guard-expert",
+  "version": "0.2.0",
+  "description": "Chinese draft editing with source fidelity and document structure review. Host review is not independent CLI validation.",
+  "author": {
+    "name": "Song Luo",
+    "email": "luosongred@gmail.com"
+  },
+  "agents": [
+    "./agents/editorial-editor.md"
+  ],
+  "expertType": "agent",
+  "agentName": "editorial-editor",
+  "skills": [
+    "./skills/editorial-guard-zh"
+  ],
+  "homepage": "https://github.com/rrrrrredy/editorial-guard",
+  "license": "MIT",
+  "displayName": {
+    "en": "Chinese Editing Expert",
+    "zh": "中文改稿专家"
+  },
+  "profession": {
+    "en": "Chinese Editing Expert",
+    "zh": "中文改稿专家"
+  },
+  "displayDescription": {
+    "en": "Polish Chinese drafts, preserve source meaning and author voice, and review delivery language and document structure.",
+    "zh": "帮助润色已有中文草稿、清理交付旁白，保留事实条件、作者声音与文档结构，提供可对照原稿的候选正文。"
+  },
+  "avatar": "avatars/expert.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "en": "Polish this Chinese draft while preserving its facts and author voice; return the candidate text",
+    "zh": "请润色这份中文草稿，保留事实和作者语气，只返回候选正文"
+  },
+  "plugin": "editorial-guard-expert",
+  "tags": [
+    {
+      "en": "Chinese Editing",
+      "zh": "中文改稿"
+    },
+    {
+      "en": "Source Fidelity",
+      "zh": "原意保留"
+    },
+    {
+      "en": "Delivery Review",
+      "zh": "交付检查"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Polish this Chinese draft while preserving its facts and author voice; return the candidate text",
+      "zh": "请润色这份中文草稿，保留事实和作者语气，只返回候选正文"
+    },
+    {
+      "en": "Review this draft without overwriting files and identify changes that would alter its meaning",
+      "zh": "请只审阅这份稿件，不覆盖文件，指出可能改变原意的问题"
+    },
+    {
+      "en": "Clean up drafting commentary while preserving limitations and required steps",
+      "zh": "请清理不合交付阶段的写作旁白，保留限制和必要步骤"
+    }
+  ]
+}

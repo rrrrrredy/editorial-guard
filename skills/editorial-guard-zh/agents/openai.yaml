@@ -1,0 +1,4 @@
+interface:
+  display_name: "中文改稿与交付检查"
+  short_description: "润色中文草稿并保护事实、条件、作者声音与文档结构，支持按需独立验收"
+  default_prompt: "请用 $editorial-guard-zh 润色这份中文草稿，保留原意和文体，只返回候选正文。"

@@ -1,0 +1,131 @@
+{
+  "name": "editorial-guard-team",
+  "version": "0.2.0",
+  "description": "Chinese draft editing with source fidelity and document structure review. Host review is not independent CLI validation.",
+  "author": {
+    "name": "Song Luo",
+    "email": "luosongred@gmail.com"
+  },
+  "agents": [
+    "./agents/editorial-lead.md",
+    "./agents/style-editor.md",
+    "./agents/fidelity-reviewer.md",
+    "./agents/delivery-reviewer.md"
+  ],
+  "expertType": "team",
+  "agentName": "editorial-lead",
+  "skills": [
+    "./skills/editorial-guard-zh"
+  ],
+  "homepage": "https://github.com/rrrrrredy/editorial-guard",
+  "license": "MIT",
+  "displayName": {
+    "en": "Chinese Editing Team",
+    "zh": "中文改稿专家团"
+  },
+  "profession": {
+    "en": "Chinese Editing Team",
+    "zh": "中文改稿专家团"
+  },
+  "displayDescription": {
+    "en": "Polish Chinese drafts, preserve source meaning and author voice, and review delivery language and document structure.",
+    "zh": "由改稿主理人统筹表达编辑、原意审阅和交付检查，保留事实条件与作者声音，交付可对照原稿的中文候选正文。"
+  },
+  "avatar": "avatars/team.png",
+  "categoryId": "06-ContentCreative",
+  "defaultInitPrompt": {
+    "en": "Polish this Chinese draft while preserving its facts and author voice; return the candidate text",
+    "zh": "请润色这份中文草稿，保留事实和作者语气，只返回候选正文"
+  },
+  "plugin": "editorial-guard-team",
+  "tags": [
+    {
+      "en": "Chinese Editing",
+      "zh": "中文改稿"
+    },
+    {
+      "en": "Source Fidelity",
+      "zh": "原意保留"
+    },
+    {
+      "en": "Delivery Review",
+      "zh": "交付检查"
+    }
+  ],
+  "quickPrompts": [
+    {
+      "en": "Polish this Chinese draft while preserving its facts and author voice; return the candidate text",
+      "zh": "请润色这份中文草稿，保留事实和作者语气，只返回候选正文"
+    },
+    {
+      "en": "Review this draft without overwriting files and identify changes that would alter its meaning",
+      "zh": "请只审阅这份稿件，不覆盖文件，指出可能改变原意的问题"
+    },
+    {
+      "en": "Clean up drafting commentary while preserving limitations and required steps",
+      "zh": "请清理不合交付阶段的写作旁白，保留限制和必要步骤"
+    }
+  ],
+  "teamInfo": {
+    "leadAgent": "editorial-lead",
+    "memberAgents": [
+      "style-editor",
+      "fidelity-reviewer",
+      "delivery-reviewer"
+    ]
+  },
+  "members": [
+    {
+      "id": "editorial-lead",
+      "name": {
+        "en": "Editing Lead",
+        "zh": "改稿主理人"
+      },
+      "profession": {
+        "en": "Editing Lead",
+        "zh": "改稿主理人"
+      },
+      "avatar": "avatars/editorial-lead.png",
+      "role": "lead"
+    },
+    {
+      "id": "style-editor",
+      "name": {
+        "en": "Style Editor",
+        "zh": "表达编辑"
+      },
+      "profession": {
+        "en": "Style Editor",
+        "zh": "表达编辑"
+      },
+      "avatar": "avatars/style-editor.png",
+      "role": "member"
+    },
+    {
+      "id": "fidelity-reviewer",
+      "name": {
+        "en": "Fidelity Reviewer",
+        "zh": "原意审阅员"
+      },
+      "profession": {
+        "en": "Fidelity Reviewer",
+        "zh": "原意审阅员"
+      },
+      "avatar": "avatars/fidelity-reviewer.png",
+      "role": "member"
+    },
+    {
+      "id": "delivery-reviewer",
+      "name": {
+        "en": "Delivery Reviewer",
+        "zh": "交付审阅员"
+      },
+      "profession": {
+        "en": "Delivery Reviewer",
+        "zh": "交付审阅员"
+      },
+      "avatar": "avatars/delivery-reviewer.png",
+      "role": "member"
+    }
+  ]
+}

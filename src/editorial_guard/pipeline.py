@@ -5,7 +5,7 @@ from .protocol import EDIT,VERIFY,REWRITE,VERDICT
 def semantic_verify(client,provider,original,candidate,context):
     deterministic=verify_edit(original,candidate,context)
     if deterministic['language_scope_status']!='supported':return deterministic
-    hard={'empty_output','target_language_changed','protected_span_changed','required_literal_missing','length_constraint'}
+    hard={'empty_output','target_language_changed','protected_span_changed','required_literal_missing','length_constraint','document_structure_changed'}
     if hard.intersection(deterministic['reasons']):return deterministic
     response=client.call(provider,VERIFY,{'input_text':original,'candidate_text':candidate,'context':context.public(),'programmatic_signals':deterministic['reasons']},VERDICT,purpose='independent_verify')
     verdict=response['output']

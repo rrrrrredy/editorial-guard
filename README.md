@@ -1,10 +1,27 @@
 # Editorial Guard
 
-简体中文表达编辑与交付验收工具。StyleBench-ZH 判断模板依赖、表达效率、连贯性和场景匹配；DeliveryBench-ZH 判断不合交付阶段的过程旁白。两套任务独立评分，共享事实保真检查。
+给已有中文稿件做两件事：把表达改顺，检查有没有改掉事实、条件和作者意思。日常润色可以直接使用 Skill；重要文件可以再通过 CLI 独立验收。
 
-[项目站](https://rrrrrredy.github.io/editorial-guard/) · [v0.1.1 下载](https://github.com/rrrrrredy/editorial-guard/releases/tag/v0.1.1) · [结果与局限](reports/results.md)
+[快速开始](docs/quickstart.md) · [下载 0.2.0](https://github.com/rrrrrredy/editorial-guard/releases/tag/v0.2.0) · [在线浏览](https://rrrrrredy.github.io/editorial-guard/) · [失败与局限](reports/results.md)
 
-本项目不检测作者是否为 AI，不以逃避检测为目标。数据来自程序事实底稿和真实模型调用，标注与评审由模型完成，没有人工标注或人类偏好验证。实验规模、分歧、失败和支持范围见 [实验协议](docs/experiment-protocol.md) 与 reports/ 中相应版本结果。
+> 原稿：这次更新彰显创新。它新增导出、搜索和批量重命名，离线编辑仍在测试。
+>
+> 候选：这次更新新增导出、搜索和批量重命名，离线编辑仍在测试。
+
+删除空泛赞美，保留三项功能和测试状态。例子是教学材料；更多[改写、保留与失败案例](examples/README.md)。
+
+## 选择用法
+
+| 需要 | 入口 | 得到什么 |
+|---|---|---|
+| 直接润色已有稿件 | [editorial-guard-zh Skill](skills/editorial-guard-zh/SKILL.md) | 宿主生成的候选正文，无需另配密钥；尚未独立验收 |
+| 单独处理文风或交付旁白 | [style-editor-zh](skills/style-editor-zh/SKILL.md) / [delivery-cleaner-zh](skills/delivery-cleaner-zh/SKILL.md) | 两项原有专用工作流 |
+| 校验本工具或其他工具的候选稿 | [CLI verify](docs/verify-external-candidate.md) | 程序保护与模型裁判结果，必要时签发凭证 |
+| 导入 WorkBuddy 专家、专家团或技能 | [平台安装包](platforms/README.md) | 各平台对应结构，头像与上传说明 |
+
+0.2.0 增加常见 Markdown 标题、锚点、链接与列表结构检查，以及作者声音样本输入。公开数据和历史实验保持 0.1.1，没有因这次工程更新而宣布模型效果提升。我们不判断作者是否为 AI，也不保证通过检测器。
+
+[Hugging Face 完整仓库](https://huggingface.co/spaces/RedinGhost/editorial-guard/tree/main) · [StyleBench-ZH 数据集](https://huggingface.co/datasets/RedinGhost/StyleBench-ZH) · [DeliveryBench-ZH 数据集](https://huggingface.co/datasets/RedinGhost/DeliveryBench-ZH)
 
 ## 安装与使用
 
@@ -30,7 +47,7 @@ style、process、both 可独立选择。无需修改的合格文本允许原样
 
 ## Skill 与集成
 
-两个 Skill 位于 skills/style-editor-zh 和 skills/delivery-cleaner-zh，可安装至目标项目的 .agents/skills。仅生成候选不代表验收通过；正式验证集中在内核。项目 hook 的安装、信任、登记与卸载见 [Codex 集成](integrations/codex/README.md)。原生事件、手动加载、自动触发和外部 wrapper 的测试分别报告，不互相替代。当前已记录手动与自动Skill加载、受控finalize及篡改阻断；Windows宿主实测未观察到原生Stop触发，因此不宣称该路径已经可用，详见[集成结果](reports/integration-results.md)。
+统一入口位于 skills/editorial-guard-zh，原有两个专用 Skill 位于 skills/style-editor-zh 和 skills/delivery-cleaner-zh，可按需安装至目标项目的 .agents/skills。仅生成候选不代表验收通过；正式验证集中在内核。项目 hook 的安装、信任、登记与卸载见 [Codex 集成](integrations/codex/README.md)。原生事件、手动加载、自动触发和外部 wrapper 的测试分别报告，不互相替代。当前已记录手动与自动Skill加载、受控finalize及篡改阻断；Windows宿主实测未观察到原生Stop触发，因此不宣称该路径已经可用，详见[集成结果](reports/integration-results.md)。
 
 标准 API 配置见 config.example.json；官方支持的 Codex Coding Plan 客户端配置见 config.coding-plan.example.json。套餐并非任意自建 API 服务的额度，批量评测采用适用的标准 API。不同客户端与传输配置分别记录。
 

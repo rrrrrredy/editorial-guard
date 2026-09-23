@@ -23,6 +23,7 @@ jobs:
       - run: python -m pip install -r requirements-runtime.lock -r requirements-dev.lock
       - run: python -m pip install --no-build-isolation .
       - run: python -m pytest -q
+      - run: python scripts/build_platform_packages.py --output ../platform-packages
       - run: python scripts/sync_prompts.py --check
       - run: python scripts/check_provider_scope.py
       - run: python scripts/replay_results.py --directory reports

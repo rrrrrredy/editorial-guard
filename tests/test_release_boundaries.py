@@ -44,6 +44,7 @@ def test_site_rejects_unreleased_locked_test(tmp_path):
     module=importlib.util.module_from_spec(spec);spec.loader.exec_module(module)
     import shutil
     shutil.copytree(root/'site',tmp_path/'site')
+    shutil.copyfile(root/'pyproject.toml',tmp_path/'pyproject.toml')
     (tmp_path/'datasets').mkdir()
     (tmp_path/'datasets/public_samples.json').write_text('[{"split":"locked_test"}]',encoding='utf-8')
     with pytest.raises(ValueError,match='Locked data'):module.build(tmp_path,tmp_path/'out','/editorial-guard/','unpublished')
@@ -106,6 +107,7 @@ def test_site_build_normalizes_checkout_line_endings(tmp_path):
             if original.is_file():
                 target=source/'site'/original.relative_to(root/'site');target.parent.mkdir(parents=True,exist_ok=True)
                 target.write_bytes(original.read_text(encoding='utf-8').replace(chr(10),newline).encode('utf-8'))
+        (source/'pyproject.toml').write_bytes((root/'pyproject.toml').read_bytes())
         out=tmp_path/(label+'-build')
         module.build(source,out,'/editorial-guard/','unpublished')
         builds.append({p.relative_to(out).as_posix():p.read_bytes() for p in out.rglob('*') if p.is_file()})

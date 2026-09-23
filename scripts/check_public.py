@@ -2,7 +2,7 @@
 import argparse,json,re,zipfile,tarfile
 from pathlib import Path
 FORBIDDEN_PARTS={'.git','.eg','.env.local','requests.sqlite3','STATE.json','PLAN.md','REQUEST.md','AGENTS.md','auth.json','__pycache__','venv'}
-ALLOWED_TOP={'.github','.gitignore','.gitattributes','.env.example','README.md','CHANGELOG.md','LICENSE','LICENSES','LICENSING.md','THIRD_PARTY_NOTICES.md','CITATION.cff','pyproject.toml','MANIFEST.in','build_backend.py','requirements-runtime.lock','requirements-dev.lock','config.example.json','config.coding-plan.example.json','context.example.json','docs','research','schemas','profiles','prompts','src','skills','integrations','datasets','evals','tests','scripts','site','reports'}
+ALLOWED_TOP={'.github','.gitignore','.gitattributes','.env.example','README.md','CHANGELOG.md','LICENSE','LICENSES','LICENSING.md','THIRD_PARTY_NOTICES.md','CITATION.cff','pyproject.toml','MANIFEST.in','build_backend.py','requirements-runtime.lock','requirements-dev.lock','config.example.json','config.coding-plan.example.json','context.example.json','docs','research','schemas','profiles','prompts','src','skills','integrations','datasets','evals','tests','scripts','site','reports','examples','platforms'}
 def inspect_names(names):
     errors=[]
     for name in names:
