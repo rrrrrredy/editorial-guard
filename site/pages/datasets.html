@@ -1,1 +1,21 @@
-<div class="eyebrow">数据浏览</div><h1>从具体中文案例<br>理解编辑边界。</h1><p class="lead">程序构建虚构事实世界，模型生成中文自然输出和受控变体，其他供应商独立标注。家族是划分和统计单位。</p><div class="notice">以下是已批准公开的真实记录，不是实时生成。尚未完成保留测试的锁定样本不会展示。自然模型输出不代表真实用户流量。</div><div class="filters"><label>评测套件<select id="suite-filter"><option value="">全部套件</option><option>StyleBench-ZH</option><option>DeliveryBench-ZH</option></select></label><label>数据路线<select id="route-filter"><option value="">全部路线</option><option value="natural">自然输出</option><option value="controlled">受控变体</option></select></label><label>搜索正文或文体<input id="sample-search" type="search" placeholder="例如：项目文档" autocomplete="off"></label></div><p id="sample-count" aria-live="polite" class="muted">正在读取样本…</p><div id="samples"></div>
+<div class="eyebrow">数据浏览</div>
+<h1>把原稿、变体和判断<br>放回同一个任务。</h1>
+<p class="lead">先读任务和事实，再比较同一家族的两份文本。正常输出来自模型在合成任务中的回答；标注是模型判断，分歧完整保留。</p>
+<div class="notice">本页只展示已公开的家族。展开家族时，按需读取 Hugging Face 的固定 v0.1.1 完整记录；也可载入已下载的 samples.jsonl。事实、约束和标注属于研究者阅读视图，不能原样作为评测输入。</div>
+<section aria-label="建议先读的家族" class="case-starts">
+  <a href="?suite=StyleBench-ZH&amp;family=cal-0000">条件与不确定性是否该保留 <span>Style · cal-0000</span></a>
+  <a href="?suite=DeliveryBench-ZH&amp;family=cal-0001">计划说明为什么被判成旁白 <span>Delivery · cal-0001</span></a>
+  <a href="?suite=StyleBench-ZH&amp;family=main-0439">对照运输记录的适用范围 <span>Style · main-0439</span></a>
+</section>
+<div class="filters">
+  <label>评测套件<select id="suite-filter"><option value="">全部套件</option><option>StyleBench-ZH</option><option>DeliveryBench-ZH</option></select></label>
+  <label>任务阶段<select id="stage-filter"><option value="">全部阶段</option><option value="plan">计划</option><option value="progress">进展</option><option value="final">最终交付</option></select></label>
+  <label>文体<select id="genre-filter"><option value="">全部文体</option></select></label>
+  <label>家族内标注状态<select id="status-filter"><option value="">全部状态</option><option value="disputed">含争议记录</option><option value="insufficient_evidence">含证据不足</option><option value="agreement">含指定字段一致</option></select></label>
+  <label>正常输出篇幅<select id="length-filter"><option value="">全部篇幅</option><option value="short">少于 400 字符</option><option value="medium">400—999 字符</option><option value="long">至少 1,000 字符</option></select></label>
+  <label class="search-label">搜索家族、任务或正文<input id="sample-search" type="search" placeholder="例如：cal-0001 或 采购" autocomplete="off"></label>
+  <button id="reset-filters" type="button">清除筛选</button>
+</div>
+<details class="local-data"><summary>使用已下载的完整记录</summary><p>选择 StyleBench-ZH 或 DeliveryBench-ZH 发布包内的 samples.jsonl。文件只在当前浏览器读取，不上传；只接受与本页公开预览对应的文本。</p><label>载入完整记录 <input id="full-data-file" type="file" accept=".jsonl"></label><p id="import-status" role="status"></p></details>
+<p id="sample-count" aria-live="polite" class="muted">正在读取公开家族…</p>
+<div id="samples"></div>

@@ -4,6 +4,8 @@ StyleBench-ZH 适合诊断重复表达、场景匹配和改写保真；DeliveryB
 
 ## 先读一个完整源家族
 
+网站源码中的 `datasets.html` 现在按家族配对浏览，可按套件、阶段、文体、篇幅和标注状态筛选，并用直接链接定位家族。展开后按需读取 Hugging Face 固定 `v0.1.1` 的完整记录；网络不可用时可在页面载入已下载的 `samples.jsonl`，文件不上传。本地预览沿用 `python scripts/build_site.py --output ../site-preview --base-path / --commit unpublished`，再运行 `python -m http.server --directory ../site-preview 8765` 并访问 `http://localhost:8765/datasets.html`。正式版本站点仍按既有 Release 部署，不因本次浏览改动重新标记旧版本。
+
 现有数据已经可以从 [StyleBench-ZH](https://huggingface.co/datasets/RedinGhost/StyleBench-ZH)、[DeliveryBench-ZH](https://huggingface.co/datasets/RedinGhost/DeliveryBench-ZH) 或 [v0.1.1 发布页](https://github.com/rrrrrredy/editorial-guard/releases/tag/v0.1.1) 下载。无需安装模型服务。下面的标准库示例支持仓库预览 JSON 和发布包的 `samples.jsonl`：
 
 ```sh

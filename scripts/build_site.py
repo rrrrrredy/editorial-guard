@@ -15,7 +15,7 @@ def build(root,destination,base_path,commit,release_url=None):
     for path in (root/'site/pages').glob('*.html'):
         text=template.replace('{{TITLE}}',titles[path.stem]).replace('{{CONTENT}}',path.read_text(encoding='utf-8')).replace('{{BASE}}',base_path).replace('{{VERSION}}',version).replace('{{DOWNLOADS}}',downloads)
         (out/path.name).write_text(text,encoding='utf-8',newline='\n')
-    for name in ('style.css','app.js'):
+    for name in ('style.css','app.js','families.js'):
         (out/'assets'/name).write_text((root/'site/assets'/name).read_text(encoding='utf-8'),encoding='utf-8',newline='\n')
     source=root/'datasets/public_samples.json'
     samples=json.loads(source.read_text(encoding='utf-8')) if source.exists() else []
