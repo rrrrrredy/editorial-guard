@@ -1,0 +1,20 @@
+{
+  "id": "main-0305-natural",
+  "source_group_id": "main-0305",
+  "suite": "DeliveryBench-ZH",
+  "split": "validation",
+  "genre": "教程",
+  "stage": "final",
+  "instruction": "依据给定虚构资料，为项目参与者撰写教程，交付阶段为final，正文约900—1300字。完整保留全部资料事实及其条件、范围、来源和未知事项。不要当作真实新闻。正文须原样引用以下资料句并保留引号：“只有完成预约者才能入场，报名不等于实际参加。”",
+  "disagreement_status": "disputed",
+  "provenance": {
+    "route": "natural"
+  },
+  "source_path": "datasets/public_samples.json",
+  "source_commit": "2be3a97",
+  "original_sha256": "377c8a4d9614a0b1b526edcc10059d6da68fc471dee5595b78d22ca38b9f0e16",
+  "license": "CC BY 4.0",
+  "attribution": "Editorial Guard / Song Luo",
+  "synthetic": true,
+  "selection": "已公开完整长稿，按具体编辑问题目的性选择；不是随机样本或未见测试。"
+}

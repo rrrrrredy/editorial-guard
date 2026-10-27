@@ -1,0 +1,276 @@
+{
+  "scope": "Offline signals and source hashes only; no semantic pass or reader rating.",
+  "raw_candidate_count": 6,
+  "post_observation_revisions": 2,
+  "cases": [
+    {
+      "case": "work-report",
+      "source_id": "main-0248-controlled",
+      "original_characters": 1272,
+      "lint_original": {
+        "language_scope_status": "supported",
+        "status": "unchecked",
+        "issues": [
+          {
+            "start": 0,
+            "end": 22,
+            "text": "下面我先分析，再给出一个深入且可落地的版本。",
+            "category": "structure_preview",
+            "suite": "process",
+            "severity": null,
+            "rule": "structure_preview",
+            "action": "review",
+            "reason": "候选模式需结合任务语义判定；不是自动删词规则。",
+            "oracle_type": "programmatic_signal"
+          },
+          {
+            "start": 1262,
+            "end": 1271,
+            "text": "我已为你去除AI味",
+            "category": "editing_residue",
+            "suite": "process",
+            "severity": null,
+            "rule": "editing_residue",
+            "action": "review",
+            "reason": "候选模式需结合任务语义判定；不是自动删词规则。",
+            "oracle_type": "programmatic_signal"
+          }
+        ],
+        "rule_version": "0.2.0",
+        "input_hash": "2d8370bbec73e96625f777551a8a81c1e20b324e3825eefb2a57fffa31c23f23",
+        "semantic_review_required": true
+      },
+      "candidates": {
+        "brief": {
+          "characters": 1116,
+          "verifier": {
+            "status": "fail",
+            "language_scope_status": "supported",
+            "reasons": [
+              "qualifier_change_requires_review"
+            ],
+            "input_hash": "2d8370bbec73e96625f777551a8a81c1e20b324e3825eefb2a57fffa31c23f23",
+            "candidate_hash": "8440fe6325efdd0a335503df0f901f6aed48973eda4c1b4ad3d82bd05a71aba4",
+            "rule_version": "0.2.0",
+            "semantic_review_required": true,
+            "structure_changes": [],
+            "scope": "source_fidelity; not independent world-fact verification"
+          },
+          "lint": {
+            "language_scope_status": "supported",
+            "status": "unchecked",
+            "issues": [],
+            "rule_version": "0.2.0",
+            "input_hash": "8440fe6325efdd0a335503df0f901f6aed48973eda4c1b4ad3d82bd05a71aba4",
+            "semantic_review_required": true
+          }
+        },
+        "previous-skill": {
+          "characters": 1083,
+          "verifier": {
+            "status": "fail",
+            "language_scope_status": "supported",
+            "reasons": [
+              "qualifier_change_requires_review"
+            ],
+            "input_hash": "2d8370bbec73e96625f777551a8a81c1e20b324e3825eefb2a57fffa31c23f23",
+            "candidate_hash": "7d14d7bf2016e9ab35b34082077dad6d73c688ac4c5bf1f731116d8553926ee5",
+            "rule_version": "0.2.0",
+            "semantic_review_required": true,
+            "structure_changes": [],
+            "scope": "source_fidelity; not independent world-fact verification"
+          },
+          "lint": {
+            "language_scope_status": "supported",
+            "status": "unchecked",
+            "issues": [],
+            "rule_version": "0.2.0",
+            "input_hash": "7d14d7bf2016e9ab35b34082077dad6d73c688ac4c5bf1f731116d8553926ee5",
+            "semantic_review_required": true
+          }
+        },
+        "updated-skill": {
+          "characters": 1053,
+          "verifier": {
+            "status": "fail",
+            "language_scope_status": "supported",
+            "reasons": [
+              "qualifier_change_requires_review"
+            ],
+            "input_hash": "2d8370bbec73e96625f777551a8a81c1e20b324e3825eefb2a57fffa31c23f23",
+            "candidate_hash": "cc3495301eeb88f283718da1a3c5167e5b1b4b44c139b762ecfa42b9df517fc9",
+            "rule_version": "0.2.0",
+            "semantic_review_required": true,
+            "structure_changes": [],
+            "scope": "source_fidelity; not independent world-fact verification"
+          },
+          "lint": {
+            "language_scope_status": "supported",
+            "status": "unchecked",
+            "issues": [],
+            "rule_version": "0.2.0",
+            "input_hash": "cc3495301eeb88f283718da1a3c5167e5b1b4b44c139b762ecfa42b9df517fc9",
+            "semantic_review_required": true
+          }
+        },
+        "edited": {
+          "characters": 955,
+          "verifier": {
+            "status": "fail",
+            "language_scope_status": "supported",
+            "reasons": [
+              "numeric_claim_changed",
+              "qualifier_change_requires_review"
+            ],
+            "input_hash": "2d8370bbec73e96625f777551a8a81c1e20b324e3825eefb2a57fffa31c23f23",
+            "candidate_hash": "8ca6a941307d7c1bff9edba3b82b0939330c1d2b1641bac64de3d1c66e760fcf",
+            "rule_version": "0.2.0",
+            "semantic_review_required": true,
+            "structure_changes": [],
+            "scope": "source_fidelity; not independent world-fact verification"
+          },
+          "lint": {
+            "language_scope_status": "supported",
+            "status": "unchecked",
+            "issues": [],
+            "rule_version": "0.2.0",
+            "input_hash": "8ca6a941307d7c1bff9edba3b82b0939330c1d2b1641bac64de3d1c66e760fcf",
+            "semantic_review_required": true
+          }
+        }
+      }
+    },
+    {
+      "case": "tutorial",
+      "source_id": "main-0305-natural",
+      "original_characters": 1853,
+      "lint_original": {
+        "language_scope_status": "supported",
+        "status": "unchecked",
+        "issues": [
+          {
+            "start": 157,
+            "end": 180,
+            "text": "不是真实新闻，而是一个虚构项目情境下的操作说明",
+            "category": "template_dependence",
+            "suite": "style",
+            "severity": null,
+            "rule": "template_dependence",
+            "action": "review",
+            "reason": "候选模式需结合任务语义判定；不是自动删词规则。",
+            "oracle_type": "programmatic_signal"
+          }
+        ],
+        "rule_version": "0.2.0",
+        "input_hash": "377c8a4d9614a0b1b526edcc10059d6da68fc471dee5595b78d22ca38b9f0e16",
+        "semantic_review_required": true
+      },
+      "candidates": {
+        "brief": {
+          "characters": 1669,
+          "verifier": {
+            "status": "fail",
+            "language_scope_status": "supported",
+            "reasons": [
+              "numeric_claim_changed",
+              "protected_span_changed",
+              "qualifier_change_requires_review"
+            ],
+            "input_hash": "377c8a4d9614a0b1b526edcc10059d6da68fc471dee5595b78d22ca38b9f0e16",
+            "candidate_hash": "703991549b829d741d14c4de9ab5396fed3eb3109ace071c73734c4758b208ae",
+            "rule_version": "0.2.0",
+            "semantic_review_required": true,
+            "structure_changes": [],
+            "scope": "source_fidelity; not independent world-fact verification"
+          },
+          "lint": {
+            "language_scope_status": "supported",
+            "status": "unchecked",
+            "issues": [],
+            "rule_version": "0.2.0",
+            "input_hash": "703991549b829d741d14c4de9ab5396fed3eb3109ace071c73734c4758b208ae",
+            "semantic_review_required": true
+          }
+        },
+        "previous-skill": {
+          "characters": 1541,
+          "verifier": {
+            "status": "fail",
+            "language_scope_status": "supported",
+            "reasons": [
+              "numeric_claim_changed",
+              "protected_span_changed",
+              "qualifier_change_requires_review"
+            ],
+            "input_hash": "377c8a4d9614a0b1b526edcc10059d6da68fc471dee5595b78d22ca38b9f0e16",
+            "candidate_hash": "25745b9ae4a5851f983a176824ec1c8e571993f9e46eec85510cb41be7ef941b",
+            "rule_version": "0.2.0",
+            "semantic_review_required": true,
+            "structure_changes": [],
+            "scope": "source_fidelity; not independent world-fact verification"
+          },
+          "lint": {
+            "language_scope_status": "supported",
+            "status": "unchecked",
+            "issues": [],
+            "rule_version": "0.2.0",
+            "input_hash": "25745b9ae4a5851f983a176824ec1c8e571993f9e46eec85510cb41be7ef941b",
+            "semantic_review_required": true
+          }
+        },
+        "updated-skill": {
+          "characters": 1626,
+          "verifier": {
+            "status": "fail",
+            "language_scope_status": "supported",
+            "reasons": [
+              "numeric_claim_changed",
+              "protected_span_changed",
+              "qualifier_change_requires_review"
+            ],
+            "input_hash": "377c8a4d9614a0b1b526edcc10059d6da68fc471dee5595b78d22ca38b9f0e16",
+            "candidate_hash": "c81e9f9ea3cff12817fac4ef34740a9ceae792652c8bb6d4824020dfdb93fd32",
+            "rule_version": "0.2.0",
+            "semantic_review_required": true,
+            "structure_changes": [],
+            "scope": "source_fidelity; not independent world-fact verification"
+          },
+          "lint": {
+            "language_scope_status": "supported",
+            "status": "unchecked",
+            "issues": [],
+            "rule_version": "0.2.0",
+            "input_hash": "c81e9f9ea3cff12817fac4ef34740a9ceae792652c8bb6d4824020dfdb93fd32",
+            "semantic_review_required": true
+          }
+        },
+        "edited": {
+          "characters": 1639,
+          "verifier": {
+            "status": "fail",
+            "language_scope_status": "supported",
+            "reasons": [
+              "numeric_claim_changed",
+              "protected_span_changed",
+              "qualifier_change_requires_review"
+            ],
+            "input_hash": "377c8a4d9614a0b1b526edcc10059d6da68fc471dee5595b78d22ca38b9f0e16",
+            "candidate_hash": "c7cc1e437d91e2525b5922c8b97147e2d0106a5279e0ae91d2fa82e47bbc5acd",
+            "rule_version": "0.2.0",
+            "semantic_review_required": true,
+            "structure_changes": [],
+            "scope": "source_fidelity; not independent world-fact verification"
+          },
+          "lint": {
+            "language_scope_status": "supported",
+            "status": "unchecked",
+            "issues": [],
+            "rule_version": "0.2.0",
+            "input_hash": "c7cc1e437d91e2525b5922c8b97147e2d0106a5279e0ae91d2fa82e47bbc5acd",
+            "semantic_review_required": true
+          }
+        }
+      }
+    }
+  ]
+}

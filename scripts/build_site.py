@@ -10,12 +10,12 @@ def build(root,destination,base_path,commit,release_url=None):
     if out.exists() and any(out.iterdir()):raise ValueError('Site output must be empty; refusing to mix stale or unrelated files')
     out.mkdir(parents=True,exist_ok=True);(out/'assets').mkdir(exist_ok=True)
     template=(root/'site/template.html').read_text(encoding='utf-8')
-    titles={'index':'首页','standards':'任务与标准','datasets':'数据样本','results':'真实结果','install':'安装与复现','license':'许可与引用','404':'页面不存在'}
+    titles={'index':'首页','cases':'完整改稿案例','standards':'任务与标准','datasets':'数据样本','results':'真实结果','install':'安装与复现','license':'许可与引用','404':'页面不存在'}
     downloads='<a href="'+html.escape(release_url,quote=True)+'">下载此版本 Release</a>' if release_url else '此本地构建尚未绑定已发布下载包；正式下载链接在发布验收后提供。'
     for path in (root/'site/pages').glob('*.html'):
         text=template.replace('{{TITLE}}',titles[path.stem]).replace('{{CONTENT}}',path.read_text(encoding='utf-8')).replace('{{BASE}}',base_path).replace('{{VERSION}}',version).replace('{{DOWNLOADS}}',downloads)
         (out/path.name).write_text(text,encoding='utf-8',newline='\n')
-    for name in ('style.css','app.js','families.js'):
+    for name in ('style.css','app.js','families.js','cases.js'):
         (out/'assets'/name).write_text((root/'site/assets'/name).read_text(encoding='utf-8'),encoding='utf-8',newline='\n')
     source=root/'datasets/public_samples.json'
     samples=json.loads(source.read_text(encoding='utf-8')) if source.exists() else []
@@ -23,6 +23,17 @@ def build(root,destination,base_path,commit,release_url=None):
     (out/'assets/samples.json').write_text(json.dumps(samples,ensure_ascii=False),encoding='utf-8',newline='\n')
     source=root/'reports/public_summary.json';results=json.loads(source.read_text(encoding='utf-8')) if source.exists() else {'summary':'正式实验尚未运行。'}
     (out/'assets/results.json').write_text(json.dumps(results,ensure_ascii=False),encoding='utf-8',newline='\n')
+    cases=[]
+    for name in ('work-report','tutorial'):
+        folder=root/'examples/full-articles'/name
+        if not folder.exists() and not samples:
+            continue
+        source=json.loads((folder/'source.json').read_text(encoding='utf-8'))
+        texts={key:(folder/(key+'.md')).read_text(encoding='utf-8') for key in ('original','brief','previous-skill','updated-skill','edited')}
+        if hashlib.sha256(texts['original'].encode('utf-8')).hexdigest()!=source['original_sha256']:
+            raise ValueError('Article source changed: '+name)
+        cases.append({'id':name,'source':source,'texts':texts})
+    (out/'assets/cases.json').write_text(json.dumps(cases,ensure_ascii=False),encoding='utf-8',newline='\n')
     (out/'.nojekyll').write_text('',encoding='utf-8',newline='\n')
     manifest={'version':version,'data_version':'0.1.1','build_commit':commit,'base_path':base_path,'samples':len(samples),'files':{str(p.relative_to(out)).replace('\\','/'):hashlib.sha256(p.read_bytes()).hexdigest() for p in out.rglob('*') if p.is_file() and p.name!='manifest.json'}}
     (out/'manifest.json').write_text(json.dumps(manifest,indent=2,sort_keys=True),encoding='utf-8',newline='\n')

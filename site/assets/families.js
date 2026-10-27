@@ -13,6 +13,8 @@ async function familyPage(){
   const labels={plan:"计划",progress:"进展",final:"最终交付",agreement:"指定字段一致",disputed:"有争议",insufficient_evidence:"证据不足"};
   const chars=text=>Array.from(text).length;
   const json=(parent,value)=>add(parent,"pre",JSON.stringify(value,null,2),"record-json");
+  const verdict=value=>({pass:"通过",fail:"未通过",uncertain:"不确定",true:"是",false:"否"}[String(value)]??"未提供");
+  function list(parent,title,items){if(!items?.length)return;add(parent,"h4",title);const ul=add(parent,"ul","");for(const item of items)add(ul,"li",typeof item==="string"?item:JSON.stringify(item));}
   function fullRows(text){
    const rows=text.split(/\r?\n/).filter(line=>line.trim()).map(line=>JSON.parse(line));
    const accepted=new Map();
@@ -36,11 +38,23 @@ async function familyPage(){
    for(const row of sources.size===1?[rows[0]]:rows){if(sources.size>1)add(parent,"h4",row.provenance.route==="natural"?"正常输出的底稿":"受控变体的底稿");
     const facts=add(parent,"ul","");for(const fact of row.source_bundle.facts||[])add(facts,"li",fact);
     if(row.source_bundle.unknowns?.length){add(parent,"h4","底稿明确的未知项");const unknowns=add(parent,"ul","");for(const item of row.source_bundle.unknowns)add(unknowns,"li",item);}
+    list(parent,"原样保护的片段",row.protected_spans);
+    if(JSON.stringify(row.required_claims)!==JSON.stringify(row.source_bundle.facts))list(parent,"必须保留的信息",row.required_claims);
     const raw=add(parent,"details","","annotation");add(raw,"summary","查看完整底稿、约束和保护信息");json(raw,{事实底稿:row.source_bundle,约束:row.constraints,保护片段:row.protected_spans,必要信息:row.required_claims});
    }
    add(parent,"h3","逐份模型标注");add(parent,"p","以下保留各模型原有理由与标签。指定字段一致也不等于人工真值。","muted");
    for(const row of rows){const section=add(parent,"section","");add(section,"h4",(row.provenance.route==="natural"?"正常输出":"受控变体")+" · "+(labels[row.disagreement_status]||row.disagreement_status));
-    for(const record of row.annotation_records){const box=add(section,"details","","annotation");const a=record.annotation||{};add(box,"summary",record.provider+" · "+record.requested_model+" · "+(a.reason||"查看原始标注"));json(box,record);}
+    const fields=[["source_fidelity","原稿保真"],["style_problem","文风问题"],["process_problem","交付旁白问题"],["no_edit_needed","无需修改"]];
+    if(row.annotation_records.length){const scroll=add(section,"div","","table-scroll");const table=add(scroll,"table","");const head=add(table,"thead","");const heading=add(head,"tr","");for(const label of ["标注模型",...fields.map(f=>f[1])])add(heading,"th",label).scope="col";
+     const tbody=add(table,"tbody","");for(const record of row.annotation_records){const line=add(tbody,"tr","");add(line,"th",record.requested_model||record.provider).scope="row";for(const [key] of fields)add(line,"td",verdict(record.annotation?.[key]));}
+     const differences=fields.filter(([key])=>new Set(row.annotation_records.map(r=>verdict(r.annotation?.[key]))).size>1).map(f=>f[1]);
+     if(differences.length)add(section,"p","这些字段的判断不同："+differences.join("、")+"。请结合下方证据与理由阅读。","notice");
+    }
+    for(const record of row.annotation_records){const box=add(section,"section","","annotation");const a=record.annotation||{};add(box,"h4",record.provider+" · "+record.requested_model);add(box,"p",a.reason||"未提供总体理由。");
+     for(const issue of a.issues||[]){const evidence=add(box,"div","","issue-evidence");add(evidence,"p",(issue.suite==="process"?"交付旁白":issue.suite==="style"?"文风":issue.suite)+" · "+issue.category,"muted");add(evidence,"blockquote",issue.text);add(evidence,"p",issue.reason);add(evidence,"p","标注建议："+({rewrite:"改写",remove:"移除",preserve:"保留",review:"复核"}[issue.action]||issue.action),"muted");}
+     if(!a.issues?.length)add(box,"p","此份标注未列出问题片段。","muted");list(box,"建议保留的表达与理由",a.protected_reasons);
+     const raw=add(box,"details","");add(raw,"summary","查看原始标注 JSON 与调用元数据");json(raw,record);
+    }
     if(!row.annotation_records.length)add(section,"p","此记录没有可用模型标注。");
    }
   }

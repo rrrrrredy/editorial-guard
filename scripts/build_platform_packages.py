@@ -3,7 +3,7 @@ import argparse, hashlib, json, re, struct, zipfile
 from pathlib import Path, PurePosixPath
 
 ROOT = Path(__file__).resolve().parents[1]
-VERSION = '0.2.0'
+VERSION = '1.0.0'
 SKILL = 'editorial-guard-zh'
 
 def text_bytes(path):

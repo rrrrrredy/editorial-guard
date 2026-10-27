@@ -1,5 +1,6 @@
 
 # Keep hash-bound semantic records stable on Windows, macOS and Linux.
 reports/** -text
+examples/full-articles/** -text
 datasets/**/*.json -text
 datasets/**/*.jsonl -text

@@ -111,7 +111,9 @@ def verify_edit(original,candidate,context=None,source_bundle=None):
     structure = structure_changes(original, candidate, allow_heading_edits=context.constraints.get('allow_heading_edits') is True)
     if structure: reasons.append('document_structure_changed')
     # Conservative lexical signals can block pending semantic review, not prove all facts.
-    numbers=lambda x:collections.Counter(re.findall(r'(?<![A-Za-z])\d+(?:\.\d+)?(?:%|％|万元|亿元|元|摄氏度|小时|天|年|月|日|个|台|次|人)?',x))
+    # Do not restart inside an identifier: V249 must not become the number 49.
+    # Repeated numeric mentions remain conservative signals for semantic review.
+    numbers=lambda x:collections.Counter(re.findall(r'(?<![A-Za-z0-9_])\d+(?:\.\d+)?(?:%|％|万元|亿元|元|摄氏度|小时|天|年|月|日|个|台|次|人)?',x))
     if numbers(original)!=numbers(candidate):reasons.append('numeric_claim_changed')
     for term in ('不','未','仅','如果','除非','可能','预计','据','声称','尚未','并非'):
         if original.count(term)!=candidate.count(term):reasons.append('qualifier_change_requires_review');break

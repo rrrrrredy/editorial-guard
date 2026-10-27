@@ -7,6 +7,8 @@ Path-specific licenses apply; this is not a choice of licenses for all content.
 |src, scripts, tests, schemas, profiles, skills, integrations, site, .github, configuration examples|MIT|
 |README, CHANGELOG, docs/architecture, docs/threat-model, docs/reproduction, docs/acceptance|MIT|
 |datasets, research, reports, docs/standards, docs/experiment-protocol, evals research protocols|CC BY 4.0|
+|examples/full-articles (complete synthetic source texts, edits and case commentary)|CC BY 4.0|
+|examples/README.md (short teaching examples)|MIT|
 |Code examples in research documents|MIT|
 |Third-party material|Its original license and notices|
 

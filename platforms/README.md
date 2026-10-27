@@ -1,14 +1,14 @@
 # 平台安装包
 
-软件与技能版本 0.2.0。下载 [GitHub Release](https://github.com/rrrrrredy/editorial-guard/releases/tag/v0.2.0)。
+软件与技能版本 1.0.0。下载 [GitHub Release](https://github.com/rrrrrredy/editorial-guard/releases/tag/v1.0.0)。
 
 | 文件 | 用途 | ZIP 结构 / 头像 |
 |---|---|---|
-| editorial-guard-zh-v0.2.0.zip | 通用技能目录安装 | editorial-guard-zh/SKILL.md；无头像 |
-| editorial-guard-zh-portable-flat-v0.2.0.zip | 接受根目录 SKILL.md 的上传入口 | SKILL.md 在根目录；无头像 |
-| editorial-guard-workbuddy-skill-v0.2.0.zip | WorkBuddy 技能 | SKILL.md 在根目录；头像另传 |
-| editorial-guard-workbuddy-expert-v0.2.0.zip | WorkBuddy 单专家 | 单顶层目录；内置头像和技能 |
-| editorial-guard-workbuddy-team-v0.2.0.zip | WorkBuddy 专家团 | 单顶层目录；4 个角色、内置头像和技能 |
+| editorial-guard-zh-v1.0.0.zip | 通用技能目录安装 | editorial-guard-zh/SKILL.md；无头像 |
+| editorial-guard-zh-portable-flat-v1.0.0.zip | 接受根目录 SKILL.md 的上传入口 | SKILL.md 在根目录；无头像 |
+| editorial-guard-workbuddy-skill-v1.0.0.zip | WorkBuddy 技能 | SKILL.md 在根目录；头像另传 |
+| editorial-guard-workbuddy-expert-v1.0.0.zip | WorkBuddy 单专家 | 单顶层目录；内置头像和技能 |
+| editorial-guard-workbuddy-team-v1.0.0.zip | WorkBuddy 专家团 | 单顶层目录；4 个角色、内置头像和技能 |
 | editorial-guard-skill-avatar.png | WorkBuddy 技能头像 | 512 × 512 PNG，独立上传 |
 
 ## 使用

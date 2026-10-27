@@ -2,13 +2,15 @@
 
 给已有中文稿件做两件事：把表达改顺，检查有没有改掉事实、条件和作者意思。日常润色可以直接使用 Skill；重要文件可以再通过 CLI 独立验收。
 
-[快速开始](docs/quickstart.md) · [下载 0.2.0](https://github.com/rrrrrredy/editorial-guard/releases/tag/v0.2.0) · [在线浏览](https://rrrrrredy.github.io/editorial-guard/) · [失败与局限](reports/results.md)
+[直接改稿](docs/quickstart.md) · [看完整案例](examples/full-articles/README.md) · [查研究数据](datasets/README.md) · [下载 1.0.0](https://github.com/rrrrrredy/editorial-guard/releases/tag/v1.0.0) · [在线浏览](https://rrrrrredy.github.io/editorial-guard/) · [失败与局限](reports/results.md)
 
 > 原稿：这次更新彰显创新。它新增导出、搜索和批量重命名，离线编辑仍在测试。
 >
 > 候选：这次更新新增导出、搜索和批量重命名，离线编辑仍在测试。
 
 删除空泛赞美，保留三项功能和测试状态。例子是教学材料；更多[改写、保留与失败案例](examples/README.md)。
+
+[完整文章案例](examples/full-articles/README.md)展示如何收紧重复说明、保留教程的必要复述，也保留简短提示和旧 Skill 的完整候选。新的内容组织指导已进入源码；这次两篇合成稿的对照尚不能证明它优于简短提示，详见[本次观察](reports/article-study-20261027/README.md)。
 
 ## 选择用法
 
@@ -19,11 +21,13 @@
 | 校验本工具或其他工具的候选稿 | [CLI verify](docs/verify-external-candidate.md) | 程序保护与模型裁判结果，必要时签发凭证 |
 | 导入 WorkBuddy 专家、专家团或技能 | [平台安装包](platforms/README.md) | 各平台对应结构，头像与上传说明 |
 
-0.2.0 增加常见 Markdown 标题、锚点、链接与列表结构检查，以及作者声音样本输入。公开数据和历史实验保持 0.1.1，没有因这次工程更新而宣布模型效果提升。我们不判断作者是否为 AI，也不保证通过检测器。
+1.0.0 补齐全文编辑指导，修正版本号内部数字的误识别，并提供完整案例和可读的标注证据。保留常见 Markdown 结构检查与作者声音输入。公开数据和历史实验保持 0.1.1，新增小规模观察没有证明 Skill 稳定优于简短提示。我们不判断作者是否为 AI，也不保证通过检测器。
 
 [Hugging Face 完整仓库](https://huggingface.co/spaces/RedinGhost/editorial-guard/tree/main) · [StyleBench-ZH 数据集](https://huggingface.co/datasets/RedinGhost/StyleBench-ZH) · [DeliveryBench-ZH 数据集](https://huggingface.co/datasets/RedinGhost/DeliveryBench-ZH)
 
-## 安装与使用
+## CLI 安装与使用
+
+日常改稿只需安装上面的 Skill；以下命令用于需要程序检查和独立校验的任务。
 
 Python 3.11 或更新版本。下载对应版本的 wheel 后安装；从源码安装可运行：
 
@@ -53,9 +57,11 @@ style、process、both 可独立选择。无需修改的合格文本允许原样
 
 ## 数据与复现
 
+阅读入口：[数据导航](datasets/README.md) · [效果与实验导航](reports/README.md)。
+
 模型范围为 Codex、DeepSeek、GLM。数据设计包含80个校准家族和500个主数据家族；自然稿与受控稿共享 source_group_id，不重复计算独立家族。实际规模、标注覆盖、分歧和质量排除分别列在两套数据卡及下载包中，生成来源如实记录。完整本地构建为580个家族；公开范围为482个家族、964条实例，另外98个未评测锁定家族保留本地。公开的964条实例中，264条指定判定字段一致、680条有争议、20条证据不足，共保存1908份标注记录。分歧与缺失均保留，不能把模型共识当作人工真值。
 
-协议0.2.0固定60个基础比较单元和20个四状态干预单元。核心比较只覆盖两个已暴露的合成家族，每套一个；历史保留响应与新增执行分开记录。这个案例研究不支持普遍效果或人类偏好声明，详见[实验协议](docs/experiment-protocol.md)。60个核心单元和20个四状态干预单元均已完成。检查加修复（B4）相对简短提示（B1）没有在这两个案例中显示稳定优势；具体分母、保真失败与裁判分歧见[结果报告](reports/results.md)。
+协议1.0.0固定60个基础比较单元和20个四状态干预单元。核心比较只覆盖两个已暴露的合成家族，每套一个；历史保留响应与新增执行分开记录。这个案例研究不支持普遍效果或人类偏好声明，详见[实验协议](docs/experiment-protocol.md)。60个核心单元和20个四状态干预单元均已完成。检查加修复（B4）相对简短提示（B1）没有在这两个案例中显示稳定优势；具体分母、保真失败与裁判分歧见[结果报告](reports/results.md)。
 
 两个套件分别保留数据卡、划分和结果。统计单位是 source_group_id，同源变体和重复评审不是独立样本。未完成保留测试的 locked_test 不发布；公开后不再视作未见测试集。可重复运行指的是协议和可观察配置复现，不保证动态模型服务逐字输出一致。
 
@@ -68,6 +74,10 @@ editorial-guard resume --work-dir private-work
 resume 继续工作目录中保存的数据或实验任务，复用已完成请求和单元；仅查看持久化账本可加 --status-only。没有保存任务时明确返回未验收状态。不得通过更换工作目录绕过调用上限。产品安装包不包含数据集或隐藏评审答案；完整方法与已获准数据单独分发。
 
 公开结果绑定矩阵、数据和评分器版本，可用 `python scripts/replay_results.py --directory reports` 离线重算。重放验证计算一致性，不把模型共识变成人工真值。原始传输日志和账户配置不进入公开包。
+
+## 1.0 的稳定范围
+
+1.0 稳定支持统一 Skill 的直接改稿入口，以及文档列出的 CLI 命令、配置和任务上下文。后续兼容更新继续沿用这些用法；若必须作不兼容变更，会使用新的主版本并提供迁移说明。提示措辞和模型输出仍可改善，1.0 不承诺逐字复现、普遍编辑优势或零错误。数据集、标注协议和实验协议独立编号。
 
 ## 许可
 

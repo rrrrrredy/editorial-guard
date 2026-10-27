@@ -8,6 +8,7 @@ def synchronize(check=False):
     files={ROOT/'prompts'/(name.lower()+'.txt'):getattr(protocol,name)+'\n' for name in ['COMMON','GENERATE','ANNOTATE','EDIT','VERIFY']}
     for skill in ['style-editor-zh','delivery-cleaner-zh']:
         files[ROOT/'skills'/skill/'references/runtime-rules.md']=protocol.EDIT+'\n'
+    files[ROOT/'skills/editorial-guard-zh/references/editing-craft.md']='# 按内容作用改稿\n\n'+protocol.EDITING_GUIDANCE+'\n'
     files.update({ROOT/'schemas'/(name.lower()+'-0.1.0.json'):json.dumps(getattr(protocol,name),ensure_ascii=False,indent=2)+'\n' for name in ['ANNOTATIONS','GENERATION','VERDICT']})
     for path,body in files.items():
         if check:

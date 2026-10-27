@@ -1,0 +1,20 @@
+{
+  "id": "main-0248-controlled",
+  "source_group_id": "main-0248",
+  "suite": "StyleBench-ZH",
+  "split": "development",
+  "genre": "工作报告",
+  "stage": "final",
+  "instruction": "依据给定虚构资料，为项目参与者撰写工作报告，交付阶段为final，正文约900—1300字。完整保留全部资料事实及其条件、范围、来源和未知事项。不要当作真实新闻。",
+  "disagreement_status": "agreement",
+  "provenance": {
+    "route": "controlled"
+  },
+  "source_path": "datasets/public_samples.json",
+  "source_commit": "2be3a97",
+  "original_sha256": "2d8370bbec73e96625f777551a8a81c1e20b324e3825eefb2a57fffa31c23f23",
+  "license": "CC BY 4.0",
+  "attribution": "Editorial Guard / Song Luo",
+  "synthetic": true,
+  "selection": "已公开完整长稿，按具体编辑问题目的性选择；不是随机样本或未见测试。"
+}

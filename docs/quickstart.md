@@ -1,10 +1,10 @@
 # 从一次改稿开始
 
-软件 0.2.0；公开数据与研究结果仍为 0.1.1，没有因本次更新而重跑模型比较。
+软件 1.0.0；公开数据与历史研究结果仍为 0.1.1。新增完整文章观察另行记录，没有重跑冻结实验。
 
 ## 在已有 Agent 中润色
 
-下载 Release 的 `editorial-guard-zh-v0.2.0.zip`，解压后将 `editorial-guard-zh` 文件夹放进宿主支持的技能目录。Codex 项目目录为 `.agents/skills/`；不同宿主应采用其实际支持的安装入口。WorkBuddy 请使用专门的平铺技能包。
+下载 Release 的 `editorial-guard-zh-v1.0.0.zip`，解压后将 `editorial-guard-zh` 文件夹放进宿主支持的技能目录。Codex 项目目录为 `.agents/skills/`；不同宿主应采用其实际支持的安装入口。WorkBuddy 请使用专门的平铺技能包。
 
 ```text
 请用 editorial-guard-zh 润色下面的文字，保留技术评论语气和全部限定，只返回候选正文：
@@ -15,10 +15,10 @@
 
 ## 安装 CLI，验证重要文件
 
-从 https://github.com/rrrrrredy/editorial-guard/releases/tag/v0.2.0 下载 wheel，使用 Python 3.11 或更新版本：
+从 https://github.com/rrrrrredy/editorial-guard/releases/tag/v1.0.0 下载 wheel，使用 Python 3.11 或更新版本：
 
 ```sh
-python -m pip install editorial_guard-0.2.0-py3-none-any.whl
+python -m pip install editorial_guard-1.0.0-py3-none-any.whl
 editorial-guard doctor
 ```
 
